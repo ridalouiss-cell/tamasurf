@@ -1,0 +1,9 @@
+# Editing backups from the working session — not part of the site
+*.bak
+
+# Pre-compression originals kept as a local safety copy (35MB, unused by the page)
+assets/_originals/
+
+# Unused leftovers from the video swap — nothing references these
+assets/about us video.mov
+assets/about us video4.mp4
