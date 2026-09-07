@@ -1393,19 +1393,19 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
 
 .gallery__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
   margin-top: var(--section-gap);
 }
 
 .gallery__item {
   position: relative;
   overflow: hidden;
-  border-radius: var(--r-md);
+  border-radius: var(--r-sm);
   background: var(--surface-card);
   cursor: pointer;
   display: block;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 3;
   box-shadow: var(--shadow-sm);
   transition: transform 0.3s var(--ease-soft), box-shadow 0.3s var(--ease-soft);
 }
@@ -1561,6 +1561,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   .tst__grid   { grid-template-columns: 1fr 1fr; }
   .pkg__track > .pkg { flex-basis: calc((100% - 24px) / 2); }
   .process__grid { grid-template-columns: 1fr 1fr; }
+  .gallery__grid { grid-template-columns: repeat(3, 1fr); }
 
   /* collapse to the burger before the bar runs out of room */
   .nav__links { display: none; }
@@ -1579,6 +1580,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   .spots__strip  { grid-template-columns: 1fr 1fr; }
   .tst__grid     { grid-template-columns: 1fr; }
   .pkg__track > .pkg { flex-basis: 100%; }
+  .gallery__grid { grid-template-columns: 1fr 1fr; gap: 10px; }
 }
 @media (max-width: 760px) {
   :root { --pad-x: 24px; --section-y: 56px; --section-gap: 28px; }
