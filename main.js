@@ -538,8 +538,8 @@ let restoreSavedLang = () => {};
       text: "We would definitely recommend Tama surf for surf courses around Tamraght / Taghazout! Youness will always teach with a lot of knowledge and a smile. It is already our 4th time lessons with him! Do not hesitate!!",
     },
     {
-      img: "assets/t-4.jpg", name: "Emelie", country: "France 🇫🇷",
-      text: "Most friendly flexible relaxed surf instructor you can find! If you want to have surf lessons you definitely have to contact Youness !!!",
+      img: "assets/t-4.jpg", name: "Alexiane with friends", country: "France 🇫🇷",
+      text: "If you're looking for a real surf coach in Morocco, go with Youness. We improved very much in a very short time thanks to him. He is patient, precise and really pays attention to each person. Beyond the surf lessons, he takes care of everything with incredible attention to detail, even organizing a tajine on the beach after the session. It was just perfect. No touristy cliché here, just real surf, great vibes and an authentic experience. Definitely the best choice if you want to truly improve and experience the real deal 💪",
     },
     {
       img: "assets/t-5.jpg", name: "Joost with family", country: "Netherlands 🇳🇱",
