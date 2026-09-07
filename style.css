@@ -1251,7 +1251,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
    ============================================================ */
 .cta {
   position: relative;
-  background: var(--green) url("assets/12.jpeg") center 32% / cover no-repeat;
+  background: var(--green) url("assets/12.jpeg") center / cover no-repeat;
   background-attachment: scroll;
   color: var(--accent);
   display: flex;
