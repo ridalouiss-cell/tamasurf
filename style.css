@@ -1394,13 +1394,16 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   padding-top: 20px;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
-.footer__credit a {
-  color: rgba(245,240,232,0.6);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.25s var(--ease-soft);
+.footer__credit-logo {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: rgba(245,240,232,0.6);
+  -webkit-mask: url("assets/lws-logo.png") center/contain no-repeat;
+          mask: url("assets/lws-logo.png") center/contain no-repeat;
+  transition: background 0.25s var(--ease-soft);
 }
-.footer__credit a:hover { color: var(--text-light); }
+.footer__credit-logo:hover { background: var(--text-light); }
 
 /* ============================================================
    GALLERY
