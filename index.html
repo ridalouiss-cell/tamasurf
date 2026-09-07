@@ -100,10 +100,10 @@
       </a>
 
       <nav class="nav__links" aria-label="Primary">
-        <a href="#courses"      class="nav__link" data-en="Packages"   data-fr="Forfaits"  data-ar="الباقات">Packages</a>
-        <a href="#about"        class="nav__link" data-en="About"      data-fr="À propos"  data-ar="من نحن">About</a>
-        <a href="#activities"   class="nav__link" data-en="Activities" data-fr="Activités" data-ar="الأنشطة">Activities</a>
-        <a href="#testimonials" class="nav__link" data-en="Reviews"    data-fr="Avis"      data-ar="آراء">Reviews</a>
+        <a href="#courses"      class="nav__link" data-i18n="nav_packages">Packages</a>
+        <a href="#about"        class="nav__link" data-i18n="nav_about">About</a>
+        <a href="#activities"   class="nav__link" data-i18n="nav_activities">Activities</a>
+        <a href="#testimonials" class="nav__link" data-i18n="nav_reviews">Reviews</a>
       </nav>
 
       <div class="nav__right">
@@ -127,9 +127,14 @@
               <span class="lang-opt-code">Français</span>
             </div>
             <div class="lang-divider"></div>
-            <div class="lang-option" data-lang="ar" data-flag="ma" data-code="AR" role="option">
-              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/ma.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
-              <span class="lang-opt-code">العربية</span>
+            <div class="lang-option" data-lang="es" data-flag="es" data-code="ES" role="option">
+              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/es.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
+              <span class="lang-opt-code">Español</span>
+            </div>
+            <div class="lang-divider"></div>
+            <div class="lang-option" data-lang="de" data-flag="de" data-code="DE" role="option">
+              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/de.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
+              <span class="lang-opt-code">Deutsch</span>
             </div>
           </div>
         </div>
@@ -142,7 +147,7 @@
         </button>
 
         <a href="https://wa.me/212653021167" class="nav__cta" target="_blank" rel="noopener"
-           data-en="Book via WhatsApp" data-fr="Réserver via WhatsApp" data-ar="احجز عبر واتساب">
+           data-i18n="nav_book">
           Book via WhatsApp
         </a>
       </div>
@@ -157,13 +162,13 @@
       <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">&#x2715;</button>
     </div>
     <nav class="mobile-menu__links" aria-label="Mobile">
-      <a href="#courses"    class="mobile-menu__link" data-en="Packages"   data-fr="Forfaits"  data-ar="الباقات">Packages</a>
-      <a href="#about"      class="mobile-menu__link" data-en="About"      data-fr="À propos"  data-ar="من نحن">About</a>
-      <a href="#activities" class="mobile-menu__link" data-en="Activities" data-fr="Activités" data-ar="الأنشطة">Activities</a>
-      <a href="#testimonials" class="mobile-menu__link" data-en="Reviews"    data-fr="Avis"      data-ar="آراء">Reviews</a>
+      <a href="#courses"    class="mobile-menu__link" data-i18n="nav_packages">Packages</a>
+      <a href="#about"      class="mobile-menu__link" data-i18n="nav_about">About</a>
+      <a href="#activities" class="mobile-menu__link" data-i18n="nav_activities">Activities</a>
+      <a href="#testimonials" class="mobile-menu__link" data-i18n="nav_reviews">Reviews</a>
     </nav>
     <a href="https://wa.me/212653021167" class="mobile-menu__cta" target="_blank" rel="noopener"
-       data-en="Book via WhatsApp" data-fr="Réserver via WhatsApp" data-ar="احجز عبر واتساب">Book via WhatsApp</a>
+       data-i18n="nav_book">Book via WhatsApp</a>
   </div>
 
   <main>
@@ -175,6 +180,13 @@
     </div>
 
     <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__word">TAMA</span>
+        <img src="assets/logo-mark.png" alt="" class="hero__wave" width="256" height="256" />
+        <span class="hero__word">SURF</span>
+        <span class="sr-only" data-i18n="hero_sr">: Surf Lessons &amp; Coaching in Taghazout, Morocco</span>
+      </h1>
+
       <div class="hero__badge">
         <div class="hero__reviews">
           <div class="hero__stars" aria-label="Rated 5 out of 5">
@@ -182,32 +194,25 @@
           </div>
           <span class="hero__rating">5/5</span>
         </div>
-        <p class="hero__sub">Top-Rated Surf Coach in Taghazout</p>
+        <p class="hero__sub" data-i18n="hero_sub">Top-Rated Surf Coach in Tamraght</p>
       </div>
-
-      <h1 class="hero__title">
-        <span class="hero__word">TAMA</span>
-        <img src="assets/logo-mark.png" alt="" class="hero__wave" width="256" height="256" />
-        <span class="hero__word">SURF</span>
-        <span class="sr-only">: Surf Lessons &amp; Coaching in Taghazout, Morocco</span>
-      </h1>
 
       <div class="hero__body">
         <p class="hero__tagline">
-          Whether you're a beginner or chasing barrels,<br />
-          we've got the perfect wave for you.
+          <span data-i18n="hero_tagline_1">Whether you're a beginner or chasing barrels,</span><br />
+          <span data-i18n="hero_tagline_2">we've got the perfect wave for you.</span>
         </p>
 
         <div class="hero__actions">
           <a href="https://wa.me/212653021167" class="hero__cta" target="_blank" rel="noopener"
-             data-en="Book Your Session" data-fr="Réservez votre session" data-ar="احجز جلستك">
+             data-i18n="hero_cta_book">
             <span>Book Your Session</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M3 8h9M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
           <a href="#courses" class="hero__cta hero__cta--ghost"
-             data-en="View Packages" data-fr="Voir les forfaits" data-ar="عرض الباقات">
+             data-i18n="hero_cta_packages">
             <span>View Packages</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M4 6.5 8 10.5l4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -223,9 +228,9 @@
   <section class="courses" id="courses">
     <div class="courses__inner">
       <div class="section-head">
-        <span class="eyebrow"><img src="assets/ic-courses.svg" alt="" />Courses</span>
-        <h2 class="section-title">Find Your Wave</h2>
-        <p class="section-sub">From your first wave to uncrowded lineups, I've got the right session for you.</p>
+        <span class="eyebrow"><img src="assets/ic-courses.svg" alt="" /><span data-i18n="courses_eyebrow">Courses</span></span>
+        <h2 class="section-title" data-i18n="courses_title">Find Your Wave</h2>
+        <p class="section-sub" data-i18n="courses_sub">From your first wave to uncrowded lineups, I've got the right session for you.</p>
       </div>
 
       <div class="pkg__carousel">
@@ -237,72 +242,72 @@
         <article class="pkg">
           <div class="pkg__media"><img src="assets/course-1.jpg" alt="Beginner surf lesson in Taghazout" loading="lazy" width="800" height="910" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Beginner Surf Lesson</h3>
-            <p class="pkg__desc">Your first steps into surfing: warm-up, paddling, the take-off and riding your first waves, in a relaxed and supportive setting.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit">/ person, 2h group</span></p>
+            <h3 class="pkg__title" data-i18n="pkg1_title">Beginner Surf Lesson</h3>
+            <p class="pkg__desc" data-i18n="pkg1_desc">Your first steps into surfing: warm-up, paddling, the take-off and riding your first waves, in a relaxed and supportive setting.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_2h_group">/ person, 2h group</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span>2h lesson: 40&euro; private / 35&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span>Full day: 45&euro; private / 40&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Full day = 2h lesson + beach lunch + 2h free surf</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span>Board &amp; wetsuit included</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span>Transport included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_2h_lesson">2h lesson: 40&euro; private / 35&euro; group</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_full_day">Full day: 45&euro; private / 40&euro; group</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_full_day_breakdown">Full day = 2h lesson + beach lunch + 2h free surf</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_board_wetsuit">Board &amp; wetsuit included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
 
         <article class="pkg">
           <div class="pkg__media"><img src="assets/course-2.jpg" alt="Surfer riding a green wave" loading="lazy" width="900" height="600" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Green Wave Surf Lesson</h3>
-            <p class="pkg__desc">Ready to leave the whitewater? Work on wave selection, timing, positioning and proper take-offs on clean unbroken waves.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit">/ person, 2h group</span></p>
+            <h3 class="pkg__title" data-i18n="pkg2_title">Green Wave Surf Lesson</h3>
+            <p class="pkg__desc" data-i18n="pkg2_desc">Ready to leave the whitewater? Work on wave selection, timing, positioning and proper take-offs on clean unbroken waves.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_2h_group">/ person, 2h group</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span>2h lesson: 40&euro; private / 35&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span>Full day: 45&euro; private / 40&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Full day = 2h lesson + beach lunch + 2h free surf</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span>Board &amp; wetsuit included</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span>Transport included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_2h_lesson">2h lesson: 40&euro; private / 35&euro; group</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_full_day">Full day: 45&euro; private / 40&euro; group</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_full_day_breakdown">Full day = 2h lesson + beach lunch + 2h free surf</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_board_wetsuit">Board &amp; wetsuit included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
 
         <article class="pkg">
           <div class="pkg__media"><img src="assets/course-3.jpg" alt="Intermediate surfer with a board" loading="lazy" width="900" height="600" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Intermediate Lesson</h3>
-            <p class="pkg__desc">Already catching green waves? Refine your turns, speed generation and linking manoeuvres.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit">/ person, 2h group</span></p>
+            <h3 class="pkg__title" data-i18n="pkg3_title">Intermediate Lesson</h3>
+            <p class="pkg__desc" data-i18n="pkg3_desc">Already catching green waves? Refine your turns, speed generation and linking manoeuvres.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_2h_group">/ person, 2h group</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span>2h lesson: 40&euro; private / 35&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span>Full day: 45&euro; private / 40&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Full day = 2h lesson + beach lunch + 2h free surf</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span>Board &amp; wetsuit included</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span>Transport included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_2h_lesson">2h lesson: 40&euro; private / 35&euro; group</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_full_day">Full day: 45&euro; private / 40&euro; group</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_full_day_breakdown">Full day = 2h lesson + beach lunch + 2h free surf</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_board_wetsuit">Board &amp; wetsuit included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
 
         <article class="pkg">
           <div class="pkg__media"><img src="assets/course-4.jpg" alt="Surfers walking to the water" loading="lazy" width="800" height="534" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Surf Guiding</h3>
-            <p class="pkg__desc">Daily guiding to the best spot based on swell, wind, tides and your level. Uncrowded lineups.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit">/ person, per day</span></p>
+            <h3 class="pkg__title" data-i18n="pkg4_title">Surf Guiding</h3>
+            <p class="pkg__desc" data-i18n="pkg4_desc">Daily guiding to the best spot based on swell, wind, tides and your level. Uncrowded lineups.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_per_day">/ person, per day</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.5s5.5-4.6 5.5-9a5.5 5.5 0 0 0-11 0c0 4.4 5.5 9 5.5 9Z"/><circle cx="10" cy="8.4" r="2.1"/></svg><span>Best spot of the day, chosen daily</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span>Small groups, all levels welcome</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Local knowledge &amp; surf etiquette</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span>Equipment available on request</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span>Transport included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.5s5.5-4.6 5.5-9a5.5 5.5 0 0 0-11 0c0 4.4 5.5 9 5.5 9Z"/><circle cx="10" cy="8.4" r="2.1"/></svg><span data-i18n="feat_best_spot">Best spot of the day, chosen daily</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_small_groups">Small groups, all levels welcome</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_local_knowledge">Local knowledge &amp; surf etiquette</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_equipment_request">Equipment available on request</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
         </div>
@@ -320,7 +325,7 @@
   <section class="about section--alt" id="about">
     <div class="about__inner">
       <h2 class="about__title">
-        <span class="about__title-top">Welcome to</span>
+        <span class="about__title-top" data-i18n="about_welcome_top">Welcome to</span>
         <span class="about__title-bottom">Tamasurf Morocco</span>
       </h2>
 
@@ -334,17 +339,17 @@
           <div class="about__block">
             <div class="about__head">
               <img class="about__icon" src="assets/ic-about.svg" alt="" />
-              <h3 class="about__heading">About Us</h3>
+              <h3 class="about__heading" data-i18n="about_us_heading">About me</h3>
             </div>
-            <p class="about__text">I grew up in the small village of Tamawanza, right by the ocean, and started surfing at the age of 10. Surfing is more than a sport to me. It's my lifestyle. As a surf coach, I'm passionate about sharing my experience and love for the ocean with others.</p>
+            <p class="about__text" data-i18n="about_us_text">I grew up in the small village of Tamawanza, right by the ocean, and started surfing at the age of 10. Surfing is more than a sport to me. It's my lifestyle. As a surf coach, I'm passionate about sharing my experience and love for the ocean with others.</p>
           </div>
 
           <div class="about__block">
             <div class="about__head">
               <img class="about__icon" src="assets/ic-mission.svg" alt="" />
-              <h3 class="about__heading">Our Mission</h3>
+              <h3 class="about__heading" data-i18n="mission_heading">My vision</h3>
             </div>
-            <p class="about__text">From surfing and surfskating to swimming, diving and fishing, the ocean is where I feel at home. I love helping every surfer, beginner to advanced, feel confident, safe and stoked in the water.</p>
+            <p class="about__text" data-i18n="mission_text">From surfing and surfskating to swimming, diving and fishing, the ocean is where I feel at home. I love helping every surfer, beginner to advanced, feel confident, safe and stoked in the water.</p>
           </div>
         </div>
       </div>
@@ -353,17 +358,17 @@
         <div class="stat">
           <img class="stat__icon" src="assets/ic-students.svg" alt="" />
           <p class="stat__num">120+</p>
-          <p class="stat__label">Students coached</p>
+          <p class="stat__label" data-i18n="stat_students">Students coached</p>
         </div>
         <div class="stat">
           <img class="stat__icon" src="assets/ic-rating.svg" alt="" />
           <p class="stat__num">5.0</p>
-          <p class="stat__label">Google Rating</p>
+          <p class="stat__label" data-i18n="stat_rating">Google Rating</p>
         </div>
         <div class="stat">
           <img class="stat__icon" src="assets/ic-years.svg" alt="" />
           <p class="stat__num">10+</p>
-          <p class="stat__label">Years of experience</p>
+          <p class="stat__label" data-i18n="stat_years">Years of experience</p>
        </div>
     </div>
   </section>
@@ -372,41 +377,41 @@
   <section class="process" id="why">
     <div class="process__inner">
       <div class="section-head">
-        <span class="eyebrow"><img src="assets/ic-process.svg" alt="" />Process</span>
-        <h2 class="section-title">Your Surf Day, Step by Step</h2>
-        <p class="section-sub">Learning to surf made easy, safe and fun. No experience needed.</p>
+        <span class="eyebrow"><img src="assets/ic-process.svg" alt="" /><span data-i18n="process_eyebrow">Process</span></span>
+        <h2 class="section-title" data-i18n="process_title">Your Surf Day, Step by Step</h2>
+        <p class="section-sub" data-i18n="process_sub">Learning to surf made easy, safe and fun. No experience needed.</p>
       </div>
 
       <div class="process__grid">
         <article class="pcard">
           <div class="pcard__top"><img class="pcard__icon" src="assets/p1.svg" alt="" /><span class="pcard__num">01</span></div>
-          <h3 class="pcard__title">Book</h3>
-          <p class="pcard__text">Send me a message on WhatsApp and tell me your dates and level, and I'll help you pick the session that fits you best.</p>
+          <h3 class="pcard__title" data-i18n="p1_title">Book</h3>
+          <p class="pcard__text" data-i18n="p1_text">Send me a message on WhatsApp and tell me your dates and level, and I'll help you pick the session that fits you best.</p>
         </article>
         <article class="pcard">
           <div class="pcard__top"><img class="pcard__icon" src="assets/p2.svg" alt="" /><span class="pcard__num">02</span></div>
-          <h3 class="pcard__title">Meet &amp; Warm Up</h3>
-          <p class="pcard__text">We meet on the sand, loosen up together and go through a quick safety briefing so you feel ready before we paddle out.</p>
+          <h3 class="pcard__title" data-i18n="p2_title">Meet &amp; Warm Up</h3>
+          <p class="pcard__text" data-i18n="p2_text">We meet on the sand, loosen up together and go through a quick safety briefing so you feel ready before we paddle out.</p>
         </article>
         <article class="pcard">
           <div class="pcard__top"><img class="pcard__icon" src="assets/p3.svg" alt="" /><span class="pcard__num">03</span></div>
-          <h3 class="pcard__title">Lesson</h3>
-          <p class="pcard__text">Two hours in the water with me, one-on-one or in a small group, with feedback tailored to exactly where you are.</p>
+          <h3 class="pcard__title" data-i18n="p3_title">Lesson</h3>
+          <p class="pcard__text" data-i18n="p3_text">Two hours in the water with me, one-on-one or in a small group, with feedback tailored to exactly where you are.</p>
         </article>
         <article class="pcard">
           <div class="pcard__top"><img class="pcard__icon" src="assets/p4.svg" alt="" /><span class="pcard__num">04</span></div>
-          <h3 class="pcard__title">Lunch at the Beach</h3>
-          <p class="pcard__text">On full-day packages we share a fresh lunch on the beach. Time to rest, refuel and swap stories before the next surf.</p>
+          <h3 class="pcard__title" data-i18n="p4_title">Lunch at the Beach</h3>
+          <p class="pcard__text" data-i18n="p4_text">On full-day packages we share a fresh lunch on the beach. Time to rest, refuel and swap stories before the next surf.</p>
         </article>
         <article class="pcard">
           <div class="pcard__top"><img class="pcard__icon" src="assets/p5.svg" alt="" /><span class="pcard__num">05</span></div>
-          <h3 class="pcard__title">Free Surf</h3>
-          <p class="pcard__text">Two more hours to put it all into practice and just enjoy the waves, with me close by whenever you need a hand.</p>
+          <h3 class="pcard__title" data-i18n="p5_title">Free Surf</h3>
+          <p class="pcard__text" data-i18n="p5_text">Two more hours to put it all into practice and just enjoy the waves, with me close by whenever you need a hand.</p>
         </article>
         <article class="pcard">
           <div class="pcard__top"><img class="pcard__icon" src="assets/p6.svg" alt="" /><span class="pcard__num">06</span></div>
-          <h3 class="pcard__title">Progress</h3>
-          <p class="pcard__text">We look back on how your session went and map out your next step, from whitewater to green waves to point breaks.</p>
+          <h3 class="pcard__title" data-i18n="p6_title">Progress</h3>
+          <p class="pcard__text" data-i18n="p6_text">We look back on how your session went and map out your next step, from whitewater to green waves to point breaks.</p>
         </article>
       </div>
     </div>
@@ -422,9 +427,9 @@
   <section class="courses section--alt" id="activities">
     <div class="courses__inner">
       <div class="section-head">
-        <span class="eyebrow"><img src="assets/ic-activities.svg" alt="" />Activities</span>
-        <h2 class="section-title">Beyond the Waves</h2>
-        <p class="section-sub">Explore Morocco's most unforgettable adventures on land and in the mountains.</p>
+        <span class="eyebrow"><img src="assets/ic-activities.svg" alt="" /><span data-i18n="activities_eyebrow">Activities</span></span>
+        <h2 class="section-title" data-i18n="activities_title">Beyond the Waves</h2>
+        <p class="section-sub" data-i18n="activities_sub">Explore Morocco's most unforgettable adventures on land and in the mountains.</p>
       </div>
 
       <div class="pkg__carousel pkg__carousel--mobile">
@@ -436,51 +441,51 @@
         <article class="pkg">
           <div class="pkg__media"><img src="assets/act-1.jpg" alt="Surfskate session" loading="lazy" width="800" height="450" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Surfskate</h3>
-            <p class="pkg__desc">Improve your balance, flow and turning technique on land. Perfect training to boost your surf skills before you paddle out.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;20</span><span class="pkg__unit">/ person, group</span></p>
+            <h3 class="pkg__title" data-i18n="act1_title">Surfskate</h3>
+            <p class="pkg__desc" data-i18n="act1_desc">Improve your balance, flow and turning technique on land. Perfect training to boost your surf skills before you paddle out.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;20</span><span class="pkg__unit" data-i18n="unit_person_group">/ person, group</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span>Private 25&euro; / Group 20&euro; per person</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span>Surfskate provided</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span>Balance, flow &amp; turning technique</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Great training for the water</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_act1_price">Private 25&euro; / Group 20&euro; per person</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_surfskate_provided">Surfskate provided</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_balance_flow">Balance, flow &amp; turning technique</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_great_training">Great training for the water</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
 
         <article class="pkg">
           <div class="pkg__media"><img src="assets/act-2.jpg" alt="Timlaline sand dunes excursion" loading="lazy" width="900" height="720" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Sand Dunes</h3>
-            <p class="pkg__desc">Guided trip to the Timlaline Sand Dunes: sandboarding, desert views and traditional Moroccan tea.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;20</span><span class="pkg__unit">/ person</span></p>
+            <h3 class="pkg__title" data-i18n="act2_title">Sand Dunes</h3>
+            <p class="pkg__desc" data-i18n="act2_desc">Guided trip to the Timlaline Sand Dunes: sandboarding, desert views and traditional Moroccan tea.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;20</span><span class="pkg__unit" data-i18n="unit_person">/ person</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span>Minimum 3 people</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span>Sandboarding &amp; desert views</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Traditional Moroccan tea</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span>Transport included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_min_3">Minimum 3 people</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_sandboarding">Sandboarding &amp; desert views</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_moroccan_tea">Traditional Moroccan tea</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
 
         <article class="pkg">
           <div class="pkg__media"><img src="assets/act-3.jpg" alt="Paradise Valley in the Atlas mountains" loading="lazy" width="800" height="450" /></div>
           <div class="pkg__body">
-            <h3 class="pkg__title">Paradise Valley</h3>
-            <p class="pkg__desc">A guided excursion to a hidden mountain oasis in the Atlas: natural pools, palm groves and mountain scenery.</p>
-            <p class="pkg__from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;15</span><span class="pkg__unit">/ person</span></p>
+            <h3 class="pkg__title" data-i18n="act3_title">Paradise Valley</h3>
+            <p class="pkg__desc" data-i18n="act3_desc">A guided excursion to a hidden mountain oasis in the Atlas: natural pools, palm groves and mountain scenery.</p>
+            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
+            <p class="pkg__price"><span class="pkg__amount">&euro;15</span><span class="pkg__unit" data-i18n="unit_person">/ person</span></p>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span>Minimum 3 people</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.5s5.5-4.6 5.5-9a5.5 5.5 0 0 0-11 0c0 4.4 5.5 9 5.5 9Z"/><circle cx="10" cy="8.4" r="2.1"/></svg><span>Hidden oasis in the Atlas</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span>Natural pools &amp; palm groves</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span>Transport included</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_min_3">Minimum 3 people</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.5s5.5-4.6 5.5-9a5.5 5.5 0 0 0-11 0c0 4.4 5.5 9 5.5 9Z"/><circle cx="10" cy="8.4" r="2.1"/></svg><span data-i18n="feat_hidden_oasis">Hidden oasis in the Atlas</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_natural_pools">Natural pools &amp; palm groves</span></li>
+            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
-            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener">Book Now</a>
+            <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
           </div>
         </article>
         </div>
@@ -541,9 +546,9 @@
   <section class="tst" id="testimonials">
     <div class="tst__inner">
       <div class="section-head">
-        <span class="eyebrow"><img src="assets/ic-testimonials.svg" alt="" />Testimonials</span>
-        <h2 class="section-title">Riders' Words</h2>
-        <p class="section-sub">Real stories from surfers who paddled out with Youness and fell in love with Morocco's waves.</p>
+        <span class="eyebrow"><img src="assets/ic-testimonials.svg" alt="" /><span data-i18n="tst_eyebrow">Testimonials</span></span>
+        <h2 class="section-title" data-i18n="tst_title">Riders' Words</h2>
+        <p class="section-sub" data-i18n="tst_sub">Real stories from surfers who paddled out with Youness and fell in love with Morocco's waves.</p>
       </div>
 
       <div class="tst__grid" data-tst-grid></div>
@@ -554,46 +559,46 @@
   <section class="faq section--alt" id="faq">
     <div class="faq__inner">
       <div class="section-head">
-        <span class="eyebrow"><img src="assets/ic-faq.svg" alt="" />FAQs</span>
-        <h2 class="section-title">Got Questions?</h2>
-        <p class="section-sub">Everything you need to know before you grab your board and hit the waves.</p>
+        <span class="eyebrow"><img src="assets/ic-faq.svg" alt="" /><span data-i18n="faq_eyebrow">FAQs</span></span>
+        <h2 class="section-title" data-i18n="faq_title">Got Questions?</h2>
+        <p class="section-sub" data-i18n="faq_sub">Everything you need to know before you grab your board and hit the waves.</p>
       </div>
 
       <div class="faq__list">
         <div class="faq__item" data-faq>
           <button class="faq__q" aria-expanded="false">
-            <span>Do I need any surfing experience to join?</span>
+            <span data-i18n="faq_q1">Do I need any surfing experience to join?</span>
             <span class="faq__icon"><i></i><i></i></span>
           </button>
-          <div class="faq__a"><p>Not at all. Our beginner courses start from zero. We cover everything from safety and paddling to catching your first waves. All levels are welcome.</p></div>
+          <div class="faq__a"><p data-i18n="faq_a1">Not at all. Our beginner courses start from zero. We cover everything from safety and paddling to catching your first waves. All levels are welcome.</p></div>
         </div>
         <div class="faq__item" data-faq>
           <button class="faq__q" aria-expanded="false">
-            <span>What's included in the price?</span>
+            <span data-i18n="faq_q2">What's included in the price?</span>
             <span class="faq__icon"><i></i><i></i></span>
           </button>
-          <div class="faq__a"><p>Every session includes your board, wetsuit, and expert coaching. Group sessions also include transport to the best spot of the day.</p></div>
+          <div class="faq__a"><p data-i18n="faq_a2">Every session includes your board, wetsuit, and expert coaching. Group sessions also include transport to the best spot of the day.</p></div>
         </div>
         <div class="faq__item" data-faq>
           <button class="faq__q" aria-expanded="false">
-            <span>Are lessons available for kids?</span>
+            <span data-i18n="faq_q3">Are lessons available for kids?</span>
             <span class="faq__icon"><i></i><i></i></span>
           </button>
-          <div class="faq__a"><p>Yes! We offer dedicated kids' and teens' sessions with smaller groups, softer boards and extra supervision in safe, gentle conditions.</p></div>
+          <div class="faq__a"><p data-i18n="faq_a3">Yes! We offer dedicated kids' and teens' sessions with smaller groups, softer boards and extra supervision in safe, gentle conditions.</p></div>
         </div>
         <div class="faq__item" data-faq>
           <button class="faq__q" aria-expanded="false">
-            <span>Can I book a private lesson?</span>
+            <span data-i18n="faq_q4">Can I book a private lesson?</span>
             <span class="faq__icon"><i></i><i></i></span>
           </button>
-          <div class="faq__a"><p>Absolutely. Private lessons give you one-on-one coaching tailored to your goals and pace. Just message us on WhatsApp to arrange a time.</p></div>
+          <div class="faq__a"><p data-i18n="faq_a4">Absolutely. Private lessons give you one-on-one coaching tailored to your goals and pace. Just message us on WhatsApp to arrange a time.</p></div>
         </div>
         <div class="faq__item" data-faq>
           <button class="faq__q" aria-expanded="false">
-            <span>How long is a typical session?</span>
+            <span data-i18n="faq_q5">How long is a typical session?</span>
             <span class="faq__icon"><i></i><i></i></span>
           </button>
-          <div class="faq__a"><p>A standard session runs about 2 hours in the water, plus warm-up and a safety briefing. Full-day packages include a lunch break on the beach.</p></div>
+          <div class="faq__a"><p data-i18n="faq_a5">A standard session runs about 2 hours in the water, plus warm-up and a safety briefing. Full-day packages include a lunch break on the beach.</p></div>
        </div>
     </div>
   </section>
@@ -601,10 +606,10 @@
   <!-- ====================== CLOSING CTA ====================== -->
   <section class="cta" id="book" aria-labelledby="ctaTitle">
     <div class="cta__inner">
-      <h2 class="cta__title" id="ctaTitle">Ready to catch your first wave?</h2>
-      <p class="cta__text">Tell me your dates and your level on WhatsApp, and I&rsquo;ll help you pick the session that fits and answer any question before you book.</p>
+      <h2 class="cta__title" id="ctaTitle" data-i18n="cta_title">Ready to catch your first wave?</h2>
+      <p class="cta__text" data-i18n="cta_text">Tell me your dates and your level on WhatsApp, and I&rsquo;ll help you pick the session that fits and answer any question before you book.</p>
       <a href="https://wa.me/212653021167" class="cta__btn" target="_blank" rel="noopener"
-         data-en="Book via WhatsApp" data-fr="Réserver via WhatsApp" data-ar="احجز عبر واتساب">Book via WhatsApp</a>
+         data-i18n="nav_book">Book via WhatsApp</a>
     </div>
   </section>
 
@@ -619,13 +624,13 @@
         <span class="footer__word">SURF</span>
       </h2>
       <nav class="footer__links" aria-label="Footer">
-        <a href="#about" class="footer__link">About me</a>
-        <a href="#courses" class="footer__link">Packages</a>
-        <a href="#activities" class="footer__link">Activities</a>
-        <a href="#why" class="footer__link">How it works</a>
-        <a href="#testimonials" class="footer__link">Reviews</a>
-        <a href="#faq" class="footer__link">FAQ</a>
-        <a href="https://wa.me/212653021167" class="footer__link" target="_blank" rel="noopener">Contact</a>
+        <a href="#about" class="footer__link" data-i18n="footer_about">About me</a>
+        <a href="#courses" class="footer__link" data-i18n="nav_packages">Packages</a>
+        <a href="#activities" class="footer__link" data-i18n="nav_activities">Activities</a>
+        <a href="#why" class="footer__link" data-i18n="footer_how">How it works</a>
+        <a href="#testimonials" class="footer__link" data-i18n="nav_reviews">Reviews</a>
+        <a href="#faq" class="footer__link" data-i18n="footer_faq">FAQ</a>
+        <a href="https://wa.me/212653021167" class="footer__link" target="_blank" rel="noopener" data-i18n="footer_contact">Contact</a>
       </nav>
     </div>
   </footer>
