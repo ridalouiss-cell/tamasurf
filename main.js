@@ -42,6 +42,8 @@ const I18N = {
 
     activities_eyebrow: "Activities", activities_title: "Beyond the Waves",
     activities_sub: "Explore Morocco's most unforgettable adventures on land and in the mountains.",
+    gallery_eyebrow: "Gallery", gallery_title: "Moments on the Water",
+    gallery_sub: "Snapshots from students learning to surf, conquering waves, and celebrating the Moroccan coast.",
     act1_title: "Surfskate",
     act1_desc: "Improve your balance, flow and turning technique on land. Perfect training to boost your surf skills before you paddle out.",
     feat_act1_price: "Private 25€ / Group 20€ per person",
@@ -141,6 +143,8 @@ const I18N = {
 
     activities_eyebrow: "Activités", activities_title: "Au-delà des vagues",
     activities_sub: "Découvrez les aventures les plus inoubliables du Maroc, sur terre et en montagne.",
+    gallery_eyebrow: "Galerie", gallery_title: "Moments sur l'eau",
+    gallery_sub: "Des images d'étudiants apprenant à surfer, conquérant les vagues et célébrant la côte marocaine.",
     act1_title: "Surfskate",
     act1_desc: "Améliorez votre équilibre, votre fluidité et vos virages sur terre. L'entraînement parfait pour progresser en surf avant de retourner à l'eau.",
     feat_act1_price: "Privé 25€ / Groupe 20€ par personne",
@@ -240,6 +244,8 @@ const I18N = {
 
     activities_eyebrow: "Actividades", activities_title: "Más allá de las olas",
     activities_sub: "Descubre las aventuras más inolvidables de Marruecos, en tierra y en las montañas.",
+    gallery_eyebrow: "Galería", gallery_title: "Momentos en el agua",
+    gallery_sub: "Instantáneas de estudiantes aprendiendo a surfear, conquistando olas y celebrando la costa marroquí.",
     act1_title: "Surfskate",
     act1_desc: "Mejora tu equilibrio, fluidez y técnica de giro en tierra. El entrenamiento perfecto para mejorar tu surf antes de remar.",
     feat_act1_price: "Privada 25€ / Grupal 20€ por persona",
@@ -339,6 +345,8 @@ const I18N = {
 
     activities_eyebrow: "Aktivitäten", activities_title: "Mehr als nur Wellen",
     activities_sub: "Entdecke die unvergesslichsten Abenteuer Marokkos, an Land und in den Bergen.",
+    gallery_eyebrow: "Galerie", gallery_title: "Momente auf dem Wasser",
+    gallery_sub: "Schnappschüsse von Schülern, die surfen lernen, Wellen erobern und die marokkanische Küste feiern.",
     act1_title: "Surfskate",
     act1_desc: "Verbessere Balance, Flow und Kurventechnik an Land. Das perfekte Training für dein Surfen, bevor du ins Wasser gehst.",
     feat_act1_price: "Privat 25€ / Gruppe 20€ pro Person",
@@ -588,6 +596,75 @@ let restoreSavedLang = () => {};
         item.querySelector(".faq__q").setAttribute("aria-expanded", "true");
       }
     });
+  });
+})();
+
+/* ---------- LIGHTBOX: gallery image viewer ---------- */
+(function lightbox() {
+  const lightboxEl = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxClose = document.getElementById("lightboxClose");
+  const lightboxPrev = document.getElementById("lightboxPrev");
+  const lightboxNext = document.getElementById("lightboxNext");
+  const galleryItems = document.querySelectorAll("[data-lightbox]");
+
+  if (!lightboxEl || !galleryItems.length) return;
+
+  let currentIndex = 0;
+  const images = Array.from(galleryItems).map(item => ({
+    src: item.href,
+    alt: item.querySelector("img")?.alt || ""
+  }));
+
+  const openLightbox = (index) => {
+    currentIndex = index;
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+    lightboxEl.classList.add("active");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    lightboxEl.classList.remove("active");
+    document.body.style.overflow = "";
+  };
+
+  const nextImage = () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+  };
+
+  const prevImage = () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+  };
+
+  // Open lightbox on gallery item click
+  galleryItems.forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      openLightbox(index);
+    });
+  });
+
+  // Close lightbox
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightboxEl.addEventListener("click", (e) => {
+    if (e.target === lightboxEl) closeLightbox();
+  });
+
+  // Navigation
+  lightboxPrev.addEventListener("click", prevImage);
+  lightboxNext.addEventListener("click", nextImage);
+
+  // Keyboard navigation
+  document.addEventListener("keydown", (e) => {
+    if (!lightboxEl.classList.contains("active")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") prevImage();
+    if (e.key === "ArrowRight") nextImage();
   });
 })();
 

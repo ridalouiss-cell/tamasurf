@@ -1382,6 +1382,150 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   transition: transform 0.35s var(--ease-spring);
 }
 .footer__link:hover::after { transform: scaleX(1); }
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery__inner {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: var(--section-gap);
+}
+
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-md);
+  background: var(--surface-card);
+  cursor: pointer;
+  display: block;
+  aspect-ratio: 1;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s var(--ease-soft), box-shadow 0.3s var(--ease-soft);
+}
+
+.gallery__item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14,72,65,0.4), rgba(14,72,65,0.2));
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-soft);
+}
+
+.gallery__item:hover .gallery__overlay {
+  opacity: 1;
+}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(16, 29, 27, 0.95);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-soft);
+  backdrop-filter: blur(4px);
+}
+
+.lightbox.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: var(--r-md);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background: rgba(232, 224, 208, 0.1);
+  border: 1px solid rgba(232, 224, 208, 0.2);
+  color: var(--accent);
+  font-size: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s var(--ease-soft);
+  z-index: 1001;
+}
+
+.lightbox__close:hover {
+  background: rgba(232, 224, 208, 0.2);
+  border-color: rgba(232, 224, 208, 0.4);
+}
+
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.lightbox__btn {
+  width: 44px;
+  height: 44px;
+  background: rgba(232, 224, 208, 0.1);
+  border: 1px solid rgba(232, 224, 208, 0.2);
+  color: var(--accent);
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s var(--ease-soft);
+  pointer-events: all;
+}
+
+.lightbox__btn:hover {
+  background: rgba(232, 224, 208, 0.2);
+  border-color: rgba(232, 224, 208, 0.4);
+}
 
 /* ============================================================
    SECTION RHYTHM — alternate the two sand tones
