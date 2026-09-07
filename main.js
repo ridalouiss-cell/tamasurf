@@ -103,6 +103,7 @@ const I18N = {
     cta_text: "Tell me your dates and your level on WhatsApp, and I’ll help you pick the session that fits and answer any question before you book.",
 
     footer_about: "About me", footer_how: "How it works", footer_faq: "FAQ", footer_contact: "Contact",
+    footer_credit: "Website developed by",
   },
 
   fr: {
@@ -204,6 +205,7 @@ const I18N = {
     cta_text: "Envoyez-moi vos dates et votre niveau sur WhatsApp, je vous aiderai à choisir la session adaptée et répondrai à toutes vos questions avant de réserver.",
 
     footer_about: "À propos de moi", footer_how: "Comment ça marche", footer_faq: "FAQ", footer_contact: "Contact",
+    footer_credit: "Site développé par",
   },
 
   es: {
@@ -305,6 +307,7 @@ const I18N = {
     cta_text: "Cuéntame tus fechas y tu nivel por WhatsApp, te ayudaré a elegir la sesión ideal y responderé cualquier pregunta antes de reservar.",
 
     footer_about: "Sobre mí", footer_how: "Cómo funciona", footer_faq: "Preguntas frecuentes", footer_contact: "Contacto",
+    footer_credit: "Sitio web desarrollado por",
   },
 
   de: {
@@ -406,6 +409,7 @@ const I18N = {
     cta_text: "Schreib mir deine Daten und dein Level auf WhatsApp. Ich helfe dir, die passende Session zu finden, und beantworte alle Fragen vor der Buchung.",
 
     footer_about: "Über mich", footer_how: "So läuft es ab", footer_faq: "FAQ", footer_contact: "Kontakt",
+    footer_credit: "Website entwickelt von",
   },
 };
 
