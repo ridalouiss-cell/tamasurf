@@ -354,7 +354,10 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   position: absolute; inset: 0; z-index: 1;
   background:
     linear-gradient(to bottom, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0) 22%),
-    linear-gradient(to top,    rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 30%);
+    linear-gradient(to top,    rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 30%),
+    /* the middle band (wordmark/badge/tagline/buttons) had no darkening at
+       all, only the top/bottom edges did — this vignette covers it */
+    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0) 72%);
   pointer-events: none;
 }
 
@@ -1250,7 +1253,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   position: relative;
   background: var(--green) url("assets/12.jpeg") center 32% / cover no-repeat;
   background-attachment: scroll;
-  color: var(--text-light);
+  color: var(--accent);
   display: flex;
   justify-content: center;
   padding: 104px var(--pad-x);
@@ -1284,7 +1287,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   font-size: 16px;
   font-weight: 500;
   line-height: 1.55;
-  color: var(--text-muted);
+  color: rgba(232, 224, 208, 0.72);
   max-width: 560px;
 }
 .cta__btn {
