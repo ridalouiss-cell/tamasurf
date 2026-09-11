@@ -7,3 +7,8 @@ assets/_originals/
 # Unused leftovers from the video swap — nothing references these
 assets/about us video.mov
 assets/about us video4.mp4
+
+# Client photo drop folders + original uploads; the site uses the optimized
+# copies in assets/pkg/, assets/gallery/ and assets/about-youness.jpg
+assets/packages/
+assets/who me.jpeg

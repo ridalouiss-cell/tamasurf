@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Wave Surf Lesson in Taghazout, Morocco | Tamasurf</title>
+  <meta name="description" content="Green Wave surf lesson in Taghazout &amp; Tamraght: progress from whitewater to unbroken waves with wave selection, timing and proper take-offs." />
+  <link rel="canonical" href="https://tamasurfmorocco.com/green-wave.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0e4841" />
+
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====================== NAV ====================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Tamasurf home">
+        <span class="nav__logo" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#courses"      class="nav__link" data-i18n="nav_packages">Packages</a>
+        <a href="index.html#about"        class="nav__link" data-i18n="nav_about">About</a>
+        <a href="index.html#activities"   class="nav__link" data-i18n="nav_activities">Activities</a>
+        <a href="index.html#testimonials" class="nav__link" data-i18n="nav_reviews">Reviews</a>
+      </nav>
+
+      <div class="nav__right">
+        <a href="https://www.instagram.com/tamasurf.morocco/" class="nav__ig" target="_blank" rel="noopener" aria-label="Tama Surf on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+        </a>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang-flag"><img id="activeFlagImg" src="https://flagcdn.com/w40/gb.png" alt="" width="40" height="30" class="flag-img" /></span>
+            <span class="lang-code" id="activeLangCode">EN</span>
+            <span class="lang-chevron">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </span>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <div class="lang-option active" data-lang="en" data-flag="gb" data-code="EN" role="option">
+              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/gb.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
+              <span class="lang-opt-code">English</span>
+            </div>
+            <div class="lang-divider"></div>
+            <div class="lang-option" data-lang="fr" data-flag="fr" data-code="FR" role="option">
+              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/fr.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
+              <span class="lang-opt-code">Français</span>
+            </div>
+            <div class="lang-divider"></div>
+            <div class="lang-option" data-lang="es" data-flag="es" data-code="ES" role="option">
+              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/es.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
+              <span class="lang-opt-code">Español</span>
+            </div>
+            <div class="lang-divider"></div>
+            <div class="lang-option" data-lang="de" data-flag="de" data-code="DE" role="option">
+              <span class="lang-opt-flag"><img src="https://flagcdn.com/w40/de.png" alt="" width="40" height="30" loading="lazy" class="flag-img" /></span>
+              <span class="lang-opt-code">Deutsch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
+        <a href="https://wa.me/212653021167" class="nav__cta" target="_blank" rel="noopener"
+           data-i18n="nav_book">
+          Book via WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+    <div class="mobile-menu__top">
+      <span class="mobile-menu__logo" role="img" aria-label="Tamasurf"></span>
+      <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <nav class="mobile-menu__links" aria-label="Mobile">
+      <a href="index.html#courses"    class="mobile-menu__link" data-i18n="nav_packages">Packages</a>
+      <a href="index.html#about"      class="mobile-menu__link" data-i18n="nav_about">About</a>
+      <a href="index.html#activities" class="mobile-menu__link" data-i18n="nav_activities">Activities</a>
+      <a href="index.html#testimonials" class="mobile-menu__link" data-i18n="nav_reviews">Reviews</a>
+    </nav>
+    <a href="https://wa.me/212653021167" class="mobile-menu__cta" target="_blank" rel="noopener"
+       data-i18n="nav_book">Book via WhatsApp</a>
+  </div>
+
+  <main>
+
+  <!-- ====================== PACKAGE ====================== -->
+  <section class="pkg-page">
+    <article class="lvl" aria-labelledby="pkgTitle">
+      <div class="lvl__media slides" data-slides>
+        <div class="slides__strip">
+          <img src="assets/pkg/green-wave-1.jpg" alt="Surf group celebrating on their boards" fetchpriority="high" />
+          <img src="assets/pkg/green-wave-2.jpg" alt="Surfer riding a green wave" loading="lazy" />
+          <img src="assets/pkg/green-wave-3.jpg" alt="Student surfing an unbroken wave" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="lvl__body">
+        <a href="index.html#courses" class="pkg-page__crumb">&larr; <span data-i18n="lvl_back">Back to packages</span></a>
+        <h1 class="lvl__title" id="pkgTitle" data-i18n="pkg2_title">Green Wave Surf Lesson</h1>
+        <p class="lvl__lead" data-i18n="lvl2_lead">Take your surfing to the next level</p>
+        <div class="lvl__text">
+          <p data-i18n="lvl2_p1">You’re already comfortable riding whitewater and ready for the next step? My Green Wave Surf Course is designed for surfers who want to progress to unbroken waves and refine their technique.</p>
+          <p data-i18n="lvl2_p2">You’ll work on wave selection, timing, positioning and proper take-offs on green waves. We focus on improving your paddling strength, board control and turning techniques, while helping you read the ocean more confidently.</p>
+          <p data-i18n="lvl2_p3">The coaching takes place private or in small groups with personalized feedback, allowing you to progress safely and at your own pace. Ocean awareness, surf etiquette and safety are key elements of every session.</p>
+          <p data-i18n="lvl2_p4">Build confidence, improve your flow and start riding clean waves with control.</p>
+        </div>
+
+        <div class="lvl__prices">
+            <h2 class="pp__title" data-i18n="pp_title">Prices incl. equipment and transportation</h2>
+            <ul class="pp__list">
+              <li><span data-i18n="pp_day_private">Private lesson for the whole day</span><b>45&euro;</b></li>
+              <li><span data-i18n="pp_day_group">Group lesson for the whole day</span><b>40&euro; <small data-i18n="pp_per_person">per person</small></b></li>
+            </ul>
+            <p class="pp__note" data-i18n="pp_day_note">Whole day = 2 hours lesson + lunch at the beach + 2 hours free surf</p>
+            <p class="pp__or" data-i18n="pp_or">or</p>
+            <ul class="pp__list">
+              <li><span data-i18n="pp_2h_private">2 hours private lesson</span><b>40&euro;</b></li>
+              <li><span data-i18n="pp_2h_group">2 hours group lesson</span><b>35&euro; <small data-i18n="pp_per_person">per person</small></b></li>
+            </ul>
+        </div>
+
+        <div class="lvl__actions">
+          <a href="https://wa.me/212653021167" class="lvl__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
+          <a href="index.html#courses" class="lvl__back" data-i18n="lvl_back">Back to packages</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <h2 class="footer__title">
+        <span class="footer__word">Tama</span>
+        <span class="footer__mark" aria-hidden="true"></span>
+        <span class="footer__word">Surf</span>
+      </h2>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="index.html#about" class="footer__link" data-i18n="footer_about">About me</a>
+        <a href="index.html#courses" class="footer__link" data-i18n="nav_packages">Packages</a>
+        <a href="index.html#activities" class="footer__link" data-i18n="nav_activities">Activities</a>
+        <a href="index.html#why" class="footer__link" data-i18n="footer_how">How it works</a>
+        <a href="index.html#testimonials" class="footer__link" data-i18n="nav_reviews">Reviews</a>
+        <a href="index.html#faq" class="footer__link" data-i18n="footer_faq">FAQ</a>
+        <a href="https://wa.me/212653021167" class="footer__link" target="_blank" rel="noopener" data-i18n="footer_contact">Contact</a>
+        <a href="https://www.instagram.com/tamasurf.morocco/" class="footer__link" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+      <p class="footer__credit">
+        <span data-i18n="footer_credit">Website developed by</span>
+        <a href="https://www.louisswebstudio.com/" target="_blank" rel="noopener" aria-label="Louisswebstudio" class="footer__credit-logo"></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

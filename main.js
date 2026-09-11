@@ -42,7 +42,7 @@ const I18N = {
 
     activities_eyebrow: "Activities", activities_title: "Beyond the Waves",
     activities_sub: "Explore Morocco's most unforgettable adventures on land and in the mountains.",
-    gallery_eyebrow: "Gallery", gallery_title: "Moments on the Water",
+    gallery_eyebrow: "Gallery", gallery_title: "What your camera roll will look like after your surf trip to Morocco",
     gallery_sub: "Snapshots from students learning to surf, conquering waves, and celebrating the Moroccan coast.",
     act1_title: "Surfskate",
     act1_desc: "Improve your balance, flow and turning technique on land. Perfect training to boost your surf skills before you paddle out.",
@@ -104,6 +104,39 @@ const I18N = {
 
     footer_about: "About me", footer_how: "How it works", footer_faq: "FAQ", footer_contact: "Contact",
     footer_credit: "Website developed by",
+
+    price_private: "Private", price_group: "Group / person",
+    price_2h: "2h lesson", price_full_day: "Full day", price_2h_session: "2h session",
+    btn_learn_more: "Learn more",
+
+    lvl_back: "Back to packages",
+    lvl1_lead: "Your first steps into surfing",
+    lvl1_p1: "You want to learn how to surf and you have little or no experience? My Beginner Surf Course is the perfect way to start your surfing journey in a relaxed and supportive environment.",
+    lvl1_p2: "You’ll learn the basics of surfing, including warm-up exercises, paddling technique, the take-off and riding your first waves. Safety in the water, understanding waves and currents and respecting the ocean are always a top priority.",
+    lvl1_p3: "Lessons take place private or in small groups to provide personal coaching and fast progress. No matter your age or fitness level, everyone is welcome. Most importantly, we focus on having fun and building confidence in the water.",
+    lvl1_p4: "Jump in, feel the ocean’s energy and catch your first waves!",
+    lvl2_lead: "Take your surfing to the next level",
+    lvl2_p1: "You’re already comfortable riding whitewater and ready for the next step? My Green Wave Surf Course is designed for surfers who want to progress to unbroken waves and refine their technique.",
+    lvl2_p2: "You’ll work on wave selection, timing, positioning and proper take-offs on green waves. We focus on improving your paddling strength, board control and turning techniques, while helping you read the ocean more confidently.",
+    lvl2_p3: "The coaching takes place private or in small groups with personalized feedback, allowing you to progress safely and at your own pace. Ocean awareness, surf etiquette and safety are key elements of every session.",
+    lvl2_p4: "Build confidence, improve your flow and start riding clean waves with control.",
+    lvl3_p1: "The Intermediate Surf Course is designed for surfers who already catch green waves by themselves and want to improve their technique, confidence and overall performance in a variety of conditions.",
+    lvl3_p2: "We focus on advanced wave reading, positioning, timing and stronger paddling, helping you catch better waves and stay in control. You’ll work on cleaner take-offs, smoother turns, speed generation and linking maneuvers, allowing you to surf with more flow and style.",
+    lvl3_p3: "Take your surfing to the next level and unlock your full potential.",
+    lvl4_p1: "The Surf Guiding service is designed for surfers who want to score the best possible waves every day, without the stress of spot selection, driving and crowd management.",
+    lvl4_p2: "Based on swell, wind, tides and your surf level, I choose the optimal surf spot each session to ensure great conditions and uncrowded lineups. With deep local knowledge, I guide you to hidden gems and the best-known breaks at the right time.",
+    lvl4_p3: "Whether you’re looking for playful waves, long point breaks or powerful reef setups, my goal is to maximize your wave count, safety and overall surf experience.",
+    lvl4_p4: "Relax, trust the local knowledge and simply enjoy the ride.",
+    pp_title: "Prices incl. equipment and transportation",
+    pp_title_guiding: "Price incl. transportation and guiding",
+    pp_day_private: "Private lesson for the whole day",
+    pp_day_group: "Group lesson for the whole day",
+    pp_day_note: "Whole day = 2 hours lesson + lunch at the beach + 2 hours free surf",
+    pp_or: "or",
+    pp_2h_private: "2 hours private lesson",
+    pp_2h_group: "2 hours group lesson",
+    pp_guiding: "Surf guiding session",
+    pp_per_person: "per person",
   },
 
   fr: {
@@ -144,7 +177,7 @@ const I18N = {
 
     activities_eyebrow: "Activités", activities_title: "Au-delà des vagues",
     activities_sub: "Découvrez les aventures les plus inoubliables du Maroc, sur terre et en montagne.",
-    gallery_eyebrow: "Galerie", gallery_title: "Moments sur l'eau",
+    gallery_eyebrow: "Galerie", gallery_title: "À quoi ressemblera votre pellicule après votre surf trip au Maroc",
     gallery_sub: "Des images d'étudiants apprenant à surfer, conquérant les vagues et célébrant la côte marocaine.",
     act1_title: "Surfskate",
     act1_desc: "Améliorez votre équilibre, votre fluidité et vos virages sur terre. L'entraînement parfait pour progresser en surf avant de retourner à l'eau.",
@@ -206,6 +239,39 @@ const I18N = {
 
     footer_about: "À propos de moi", footer_how: "Comment ça marche", footer_faq: "FAQ", footer_contact: "Contact",
     footer_credit: "Site développé par",
+
+    price_private: "Privé", price_group: "Groupe / pers.",
+    price_2h: "Cours de 2h", price_full_day: "Journée", price_2h_session: "Session de 2h",
+    btn_learn_more: "En savoir plus",
+
+    lvl_back: "Retour aux forfaits",
+    lvl1_lead: "Vos premiers pas dans le surf",
+    lvl1_p1: "Vous voulez apprendre à surfer et vous avez peu ou pas d'expérience ? Mon cours débutant est la façon idéale de commencer votre aventure dans le surf, dans un cadre détendu et bienveillant.",
+    lvl1_p2: "Vous apprendrez les bases du surf : échauffement, technique de rame, le take-off et vos premières vagues. La sécurité dans l'eau, la compréhension des vagues et des courants et le respect de l'océan sont toujours une priorité.",
+    lvl1_p3: "Les cours se déroulent en privé ou en petits groupes, pour un coaching personnalisé et des progrès rapides. Quel que soit votre âge ou votre condition physique, tout le monde est le bienvenu. Et surtout, on s'amuse et on prend confiance dans l'eau.",
+    lvl1_p4: "Lancez-vous, sentez l'énergie de l'océan et attrapez vos premières vagues !",
+    lvl2_lead: "Passez au niveau supérieur",
+    lvl2_p1: "Vous êtes déjà à l'aise dans la mousse et prêt pour l'étape suivante ? Mon cours Green Wave est conçu pour les surfeurs qui veulent passer aux vagues non déferlées et affiner leur technique.",
+    lvl2_p2: "Vous travaillerez le choix des vagues, le timing, le placement et des take-offs propres sur les vagues vertes. On améliore votre puissance de rame, le contrôle de la planche et vos virages, tout en vous aidant à mieux lire l'océan.",
+    lvl2_p3: "Le coaching se fait en privé ou en petits groupes avec des retours personnalisés, pour progresser en sécurité et à votre rythme. La connaissance de l'océan, les règles de priorité et la sécurité font partie de chaque session.",
+    lvl2_p4: "Prenez confiance, améliorez votre fluidité et commencez à surfer des vagues propres avec contrôle.",
+    lvl3_p1: "Le cours intermédiaire s'adresse aux surfeurs qui prennent déjà des vagues vertes seuls et veulent améliorer leur technique, leur confiance et leurs performances dans des conditions variées.",
+    lvl3_p2: "On travaille la lecture avancée des vagues, le placement, le timing et une rame plus puissante, pour prendre de meilleures vagues et garder le contrôle. Vous travaillerez des take-offs plus propres, des virages plus fluides, la prise de vitesse et l'enchaînement des manœuvres, pour surfer avec plus de flow et de style.",
+    lvl3_p3: "Passez au niveau supérieur et libérez tout votre potentiel.",
+    lvl4_p1: "Le surf guiding est conçu pour les surfeurs qui veulent les meilleures vagues possibles chaque jour, sans le stress du choix du spot, de la route et de la foule.",
+    lvl4_p2: "Selon la houle, le vent, les marées et votre niveau, je choisis le meilleur spot pour chaque session, pour de bonnes conditions et des line-ups peu fréquentés. Grâce à ma connaissance locale, je vous emmène sur des spots cachés et les breaks les plus connus au bon moment.",
+    lvl4_p3: "Que vous cherchiez des vagues ludiques, de longs point breaks ou des reefs puissants, mon objectif est de maximiser votre nombre de vagues, votre sécurité et votre expérience de surf.",
+    lvl4_p4: "Détendez-vous, faites confiance à l'expérience locale et profitez simplement.",
+    pp_title: "Prix incluant l’équipement et le transport",
+    pp_title_guiding: "Prix incluant le transport et le guiding",
+    pp_day_private: "Cours privé pour la journée",
+    pp_day_group: "Cours en groupe pour la journée",
+    pp_day_note: "Journée = 2 heures de cours + déjeuner à la plage + 2 heures de surf libre",
+    pp_or: "ou",
+    pp_2h_private: "Cours privé de 2 heures",
+    pp_2h_group: "Cours en groupe de 2 heures",
+    pp_guiding: "Session de surf guiding",
+    pp_per_person: "par personne",
   },
 
   es: {
@@ -246,7 +312,7 @@ const I18N = {
 
     activities_eyebrow: "Actividades", activities_title: "Más allá de las olas",
     activities_sub: "Descubre las aventuras más inolvidables de Marruecos, en tierra y en las montañas.",
-    gallery_eyebrow: "Galería", gallery_title: "Momentos en el agua",
+    gallery_eyebrow: "Galería", gallery_title: "Así se verá tu carrete después de tu viaje de surf a Marruecos",
     gallery_sub: "Instantáneas de estudiantes aprendiendo a surfear, conquistando olas y celebrando la costa marroquí.",
     act1_title: "Surfskate",
     act1_desc: "Mejora tu equilibrio, fluidez y técnica de giro en tierra. El entrenamiento perfecto para mejorar tu surf antes de remar.",
@@ -308,6 +374,39 @@ const I18N = {
 
     footer_about: "Sobre mí", footer_how: "Cómo funciona", footer_faq: "Preguntas frecuentes", footer_contact: "Contacto",
     footer_credit: "Sitio web desarrollado por",
+
+    price_private: "Privada", price_group: "Grupo / pers.",
+    price_2h: "Clase de 2h", price_full_day: "Día completo", price_2h_session: "Sesión de 2h",
+    btn_learn_more: "Más información",
+
+    lvl_back: "Volver a los paquetes",
+    lvl1_lead: "Tus primeros pasos en el surf",
+    lvl1_p1: "¿Quieres aprender a surfear y tienes poca o ninguna experiencia? Mi curso de iniciación es la forma perfecta de empezar tu aventura en el surf, en un ambiente relajado y de apoyo.",
+    lvl1_p2: "Aprenderás lo básico del surf: calentamiento, técnica de remada, el take-off y tus primeras olas. La seguridad en el agua, entender las olas y las corrientes y respetar el océano son siempre la prioridad.",
+    lvl1_p3: "Las clases son privadas o en grupos pequeños, para un coaching personal y un progreso rápido. Da igual tu edad o tu forma física: todos son bienvenidos. Y lo más importante: nos divertimos y ganamos confianza en el agua.",
+    lvl1_p4: "¡Lánzate, siente la energía del océano y coge tus primeras olas!",
+    lvl2_lead: "Lleva tu surf al siguiente nivel",
+    lvl2_p1: "¿Ya te sientes cómodo en la espuma y estás listo para el siguiente paso? Mi curso Green Wave está pensado para surfistas que quieren pasar a olas sin romper y pulir su técnica.",
+    lvl2_p2: "Trabajarás la elección de olas, el timing, la posición y take-offs correctos en olas verdes. Mejoramos tu fuerza de remada, el control de la tabla y los giros, y te ayudamos a leer el océano con más confianza.",
+    lvl2_p3: "El coaching es privado o en grupos pequeños con feedback personal, para que progreses con seguridad y a tu ritmo. El conocimiento del océano, las normas de prioridad y la seguridad forman parte de cada sesión.",
+    lvl2_p4: "Gana confianza, mejora tu fluidez y empieza a surfear olas limpias con control.",
+    lvl3_p1: "El curso intermedio es para surfistas que ya cogen olas verdes por sí mismos y quieren mejorar su técnica, su confianza y su rendimiento en condiciones variadas.",
+    lvl3_p2: "Nos centramos en la lectura avanzada de olas, la posición, el timing y una remada más fuerte, para coger mejores olas y mantener el control. Trabajarás take-offs más limpios, giros más suaves, generación de velocidad y encadenar maniobras, para surfear con más flow y estilo.",
+    lvl3_p3: "Lleva tu surf al siguiente nivel y desbloquea todo tu potencial.",
+    lvl4_p1: "El servicio de surf guiding está pensado para surfistas que quieren las mejores olas posibles cada día, sin el estrés de elegir spot, conducir y lidiar con la gente.",
+    lvl4_p2: "Según el swell, el viento, las mareas y tu nivel, elijo el mejor spot para cada sesión, con buenas condiciones y picos sin masificar. Con mi conocimiento local, te llevo a rincones escondidos y a los breaks más conocidos en el momento justo.",
+    lvl4_p3: "Tanto si buscas olas divertidas, largas point breaks o reefs potentes, mi objetivo es maximizar tu número de olas, tu seguridad y tu experiencia de surf.",
+    lvl4_p4: "Relájate, confía en el conocimiento local y disfruta.",
+    pp_title: "Precios con equipo y transporte incluidos",
+    pp_title_guiding: "Precio con transporte y guía incluidos",
+    pp_day_private: "Clase privada de día completo",
+    pp_day_group: "Clase en grupo de día completo",
+    pp_day_note: "Día completo = 2 horas de clase + comida en la playa + 2 horas de surf libre",
+    pp_or: "o",
+    pp_2h_private: "Clase privada de 2 horas",
+    pp_2h_group: "Clase en grupo de 2 horas",
+    pp_guiding: "Sesión de surf guiding",
+    pp_per_person: "por persona",
   },
 
   de: {
@@ -348,7 +447,7 @@ const I18N = {
 
     activities_eyebrow: "Aktivitäten", activities_title: "Mehr als nur Wellen",
     activities_sub: "Entdecke die unvergesslichsten Abenteuer Marokkos, an Land und in den Bergen.",
-    gallery_eyebrow: "Galerie", gallery_title: "Momente auf dem Wasser",
+    gallery_eyebrow: "Galerie", gallery_title: "So sieht deine Kamerarolle nach deinem Surftrip in Marokko aus",
     gallery_sub: "Schnappschüsse von Schülern, die surfen lernen, Wellen erobern und die marokkanische Küste feiern.",
     act1_title: "Surfskate",
     act1_desc: "Verbessere Balance, Flow und Kurventechnik an Land. Das perfekte Training für dein Surfen, bevor du ins Wasser gehst.",
@@ -410,6 +509,39 @@ const I18N = {
 
     footer_about: "Über mich", footer_how: "So läuft es ab", footer_faq: "FAQ", footer_contact: "Kontakt",
     footer_credit: "Website entwickelt von",
+
+    price_private: "Privat", price_group: "Gruppe / Pers.",
+    price_2h: "2h Kurs", price_full_day: "Ganzer Tag", price_2h_session: "2h Session",
+    btn_learn_more: "Mehr erfahren",
+
+    lvl_back: "Zurück zu den Angeboten",
+    lvl1_lead: "Deine ersten Schritte ins Surfen",
+    lvl1_p1: "Du möchtest surfen lernen und hast wenig oder keine Erfahrung? Mein Anfängerkurs ist der perfekte Einstieg in deine Surf-Reise, in entspannter und unterstützender Atmosphäre.",
+    lvl1_p2: "Du lernst die Grundlagen des Surfens: Aufwärmübungen, Paddeltechnik, den Take-off und deine ersten Wellen. Sicherheit im Wasser, das Verständnis von Wellen und Strömungen und Respekt vor dem Ozean haben immer oberste Priorität.",
+    lvl1_p3: "Die Kurse finden privat oder in kleinen Gruppen statt, für persönliches Coaching und schnelle Fortschritte. Egal wie alt oder fit du bist, jeder ist willkommen. Vor allem geht es um Spaß und Selbstvertrauen im Wasser.",
+    lvl1_p4: "Spring rein, spür die Energie des Ozeans und surf deine ersten Wellen!",
+    lvl2_lead: "Bring dein Surfen aufs nächste Level",
+    lvl2_p1: "Du fühlst dich im Weißwasser schon sicher und bist bereit für den nächsten Schritt? Mein Green-Wave-Kurs ist für Surfer, die auf ungebrochene Wellen wechseln und ihre Technik verfeinern möchten.",
+    lvl2_p2: "Du arbeitest an Wellenauswahl, Timing, Positionierung und sauberen Take-offs auf grünen Wellen. Wir verbessern deine Paddelkraft, Boardkontrolle und Turns und helfen dir, den Ozean sicherer zu lesen.",
+    lvl2_p3: "Das Coaching findet privat oder in kleinen Gruppen mit persönlichem Feedback statt, damit du sicher und in deinem Tempo Fortschritte machst. Meereskunde, Surf-Etikette und Sicherheit gehören zu jeder Session.",
+    lvl2_p4: "Gewinne Selbstvertrauen, verbessere deinen Flow und surf saubere Wellen mit Kontrolle.",
+    lvl3_p1: "Der Fortgeschrittenenkurs ist für Surfer, die schon selbstständig grüne Wellen anpaddeln und ihre Technik, ihr Selbstvertrauen und ihre Performance in unterschiedlichen Bedingungen verbessern möchten.",
+    lvl3_p2: "Wir konzentrieren uns auf fortgeschrittenes Wellenlesen, Positionierung, Timing und stärkeres Paddeln, damit du bessere Wellen erwischst und die Kontrolle behältst. Du arbeitest an saubereren Take-offs, flüssigeren Turns, Speed und dem Verbinden von Manövern, für mehr Flow und Style.",
+    lvl3_p3: "Bring dein Surfen aufs nächste Level und schöpfe dein volles Potenzial aus.",
+    lvl4_p1: "Das Surf Guiding ist für Surfer, die jeden Tag die bestmöglichen Wellen surfen möchten, ohne Stress bei Spotwahl, Fahrerei und vollen Line-ups.",
+    lvl4_p2: "Je nach Swell, Wind, Gezeiten und deinem Level wähle ich für jede Session den besten Spot, für gute Bedingungen und leere Line-ups. Mit meiner lokalen Erfahrung bringe ich dich zur richtigen Zeit zu versteckten Spots und den bekanntesten Breaks.",
+    lvl4_p3: "Ob verspielte Wellen, lange Pointbreaks oder kraftvolle Riffe: mein Ziel ist, deine Wellenanzahl, deine Sicherheit und dein gesamtes Surferlebnis zu maximieren.",
+    lvl4_p4: "Lehn dich zurück, vertrau auf lokales Wissen und genieß den Ride.",
+    pp_title: "Preise inkl. Ausrüstung und Transport",
+    pp_title_guiding: "Preis inkl. Transport und Guiding",
+    pp_day_private: "Privatkurs für den ganzen Tag",
+    pp_day_group: "Gruppenkurs für den ganzen Tag",
+    pp_day_note: "Ganzer Tag = 2 Stunden Kurs + Mittagessen am Strand + 2 Stunden Freesurf",
+    pp_or: "oder",
+    pp_2h_private: "2 Stunden Privatkurs",
+    pp_2h_group: "2 Stunden Gruppenkurs",
+    pp_guiding: "Surf-Guiding-Session",
+    pp_per_person: "pro Person",
   },
 };
 
@@ -529,6 +661,42 @@ let restoreSavedLang = () => {};
   });
 })();
 
+/* ---------- PACKAGE PHOTOS: 3-photo slider inside each card ---------- */
+(function photoSliders() {
+  document.querySelectorAll("[data-slides]").forEach((root) => {
+    const strip = root.querySelector(".slides__strip");
+    const imgs = strip ? strip.querySelectorAll("img") : [];
+    if (imgs.length < 2) return;   // single photo: no dots, no arrows
+
+    const dots = document.createElement("div");
+    dots.className = "slides__dots";
+    dots.innerHTML = Array.from(imgs, (_, i) =>
+      `<button type="button" class="slides__dot" aria-label="Photo ${i + 1}"></button>`).join("");
+    const arrows = `
+      <button type="button" class="slides__arrow slides__arrow--prev" aria-label="Previous photo"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg></button>
+      <button type="button" class="slides__arrow slides__arrow--next" aria-label="Next photo"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 4.5 13 10l-5.5 5.5"/></svg></button>`;
+    root.insertAdjacentHTML("beforeend", arrows);
+    root.appendChild(dots);
+
+    const dotBtns = dots.querySelectorAll(".slides__dot");
+    const index = () => Math.round(strip.scrollLeft / strip.clientWidth);
+    const go = (i) => {
+      const n = (i + imgs.length) % imgs.length;   // wrap around
+      strip.scrollTo({ left: n * strip.clientWidth });
+    };
+    const sync = () => {
+      const i = index();
+      dotBtns.forEach((d, j) => d.classList.toggle("is-active", j === i));
+    };
+
+    root.querySelector(".slides__arrow--prev").addEventListener("click", () => go(index() - 1));
+    root.querySelector(".slides__arrow--next").addEventListener("click", () => go(index() + 1));
+    dotBtns.forEach((d, j) => d.addEventListener("click", () => go(j)));
+    strip.addEventListener("scroll", sync, { passive: true });
+    sync();
+  });
+})();
+
 /* ---------- TESTIMONIALS: render the review grid ---------- */
 (function testimonials() {
   const grid = document.querySelector("[data-tst-grid]");
@@ -603,73 +771,80 @@ let restoreSavedLang = () => {};
   });
 })();
 
-/* ---------- LIGHTBOX: gallery image viewer ---------- */
-(function lightbox() {
-  const lightboxEl = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-  const lightboxClose = document.getElementById("lightboxClose");
-  const lightboxPrev = document.getElementById("lightboxPrev");
-  const lightboxNext = document.getElementById("lightboxNext");
-  const galleryItems = document.querySelectorAll("[data-lightbox]");
+/* ---------- GALLERY: camera-roll slideshow ---------- */
+(function cameraRoll() {
+  const root = document.querySelector("[data-roll]");
+  if (!root) return;
+  const strip = root.querySelector(".roll__strip");
+  const slides = strip.querySelectorAll("img");
+  const thumbs = document.querySelectorAll("[data-roll-thumb]");
+  const count = root.querySelector(".roll__count");
+  const bar = root.querySelector(".roll__bar");
+  const playBtn = root.querySelector("[data-roll-play]");
+  const DELAY = 3500;   // keep in sync with the .roll__bar animation in style.css
 
-  if (!lightboxEl || !galleryItems.length) return;
+  let playing = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let visible = false, hovered = false, current = 0, timer, settle;
 
-  let currentIndex = 0;
-  const images = Array.from(galleryItems).map(item => ({
-    src: item.href,
-    alt: item.querySelector("img")?.alt || ""
-  }));
+  const index = () => Math.round(strip.scrollLeft / strip.clientWidth);
 
-  const openLightbox = (index) => {
-    currentIndex = index;
-    lightboxImg.src = images[currentIndex].src;
-    lightboxImg.alt = images[currentIndex].alt;
-    lightboxEl.classList.add("active");
-    document.body.style.overflow = "hidden";
-  };
-
-  const closeLightbox = () => {
-    lightboxEl.classList.remove("active");
-    document.body.style.overflow = "";
-  };
-
-  const nextImage = () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    lightboxImg.src = images[currentIndex].src;
-    lightboxImg.alt = images[currentIndex].alt;
-  };
-
-  const prevImage = () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    lightboxImg.src = images[currentIndex].src;
-    lightboxImg.alt = images[currentIndex].alt;
-  };
-
-  // Open lightbox on gallery item click
-  galleryItems.forEach((item, index) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      openLightbox(index);
+  const show = (i) => {
+    count.textContent = `${i + 1} / ${slides.length}`;
+    thumbs.forEach((t, j) => {
+      t.classList.toggle("is-active", j === i);
+      t.setAttribute("aria-current", String(j === i));
     });
-  });
+  };
 
-  // Close lightbox
-  lightboxClose.addEventListener("click", closeLightbox);
-  lightboxEl.addEventListener("click", (e) => {
-    if (e.target === lightboxEl) closeLightbox();
-  });
+  // `current` is the photo we're heading to, set before the smooth scroll
+  // lands, so quick repeated clicks step from the target, not mid-slide
+  const go = (i) => {
+    current = (i + slides.length) % slides.length;
+    show(current);
+    strip.scrollTo({ left: current * strip.clientWidth });
+  };
 
-  // Navigation
-  lightboxPrev.addEventListener("click", prevImage);
-  lightboxNext.addEventListener("click", nextImage);
+  // (re)start the countdown to the next photo; the bar restarts with it
+  const schedule = () => {
+    clearTimeout(timer);
+    root.classList.remove("is-ticking");
+    void bar.offsetWidth;
+    if (!playing || !visible || hovered) return;
+    root.classList.add("is-ticking");
+    timer = setTimeout(() => go(current + 1), DELAY);
+  };
 
-  // Keyboard navigation
-  document.addEventListener("keydown", (e) => {
-    if (!lightboxEl.classList.contains("active")) return;
-    if (e.key === "Escape") closeLightbox();
-    if (e.key === "ArrowLeft") prevImage();
-    if (e.key === "ArrowRight") nextImage();
-  });
+  const setPlaying = (on) => {
+    playing = on;
+    root.classList.toggle("is-paused", !on);
+    playBtn.setAttribute("aria-label", on ? "Pause slideshow" : "Play slideshow");
+    schedule();
+  };
+
+  strip.addEventListener("scroll", () => {
+    clearTimeout(settle);
+    settle = setTimeout(() => {   // a swipe / smooth scroll has landed
+      current = index();
+      show(current);
+      schedule();
+    }, 150);
+  }, { passive: true });
+
+  root.querySelector("[data-roll-prev]").addEventListener("click", () => go(current - 1));
+  root.querySelector("[data-roll-next]").addEventListener("click", () => go(current + 1));
+  playBtn.addEventListener("click", () => setPlaying(!playing));
+  thumbs.forEach((t, j) => t.addEventListener("click", () => go(j)));
+
+  // hovering the phone = looking at a photo: hold it
+  const screen = root.querySelector(".roll__screen");
+  screen.addEventListener("mouseenter", () => { hovered = true; schedule(); });
+  screen.addEventListener("mouseleave", () => { hovered = false; schedule(); });
+
+  // only play while the section is on screen
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; schedule(); }, { threshold: 0.35 }).observe(root);
+
+  setPlaying(playing);
+  show(0);
 })();
 
 /* ---------- i18n: restore a saved language now that all page content

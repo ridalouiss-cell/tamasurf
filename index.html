@@ -102,7 +102,7 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#" class="nav__brand" aria-label="Tamasurf home">
-        <img src="assets/logo.png" alt="Tamasurf" class="nav__logo" width="260" height="146" />
+        <span class="nav__logo" aria-hidden="true"></span>
       </a>
 
       <nav class="nav__links" aria-label="Primary">
@@ -113,6 +113,10 @@
       </nav>
 
       <div class="nav__right">
+        <a href="https://www.instagram.com/tamasurf.morocco/" class="nav__ig" target="_blank" rel="noopener" aria-label="Tama Surf on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.6" fill="currentColor" stroke="none"/></svg>
+        </a>
+
         <!-- Language Switcher -->
         <div class="lang-switcher" id="langSwitcher">
           <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
@@ -164,7 +168,7 @@
   <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
     <div class="mobile-menu__top">
-      <img src="assets/logo.png" alt="Tamasurf" class="mobile-menu__logo" width="260" height="146" />
+      <span class="mobile-menu__logo" role="img" aria-label="Tamasurf"></span>
       <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">&#x2715;</button>
     </div>
     <nav class="mobile-menu__links" aria-label="Mobile">
@@ -246,65 +250,100 @@
         </div>
         <div class="pkg__track" id="pkgTrack" data-pkg-track tabindex="0" role="group" aria-label="Surf packages">
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/course-1.jpg" alt="Beginner surf lesson in Taghazout" loading="lazy" width="800" height="910" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/course-1.jpg" alt="Beginner surf lesson in Taghazout" loading="lazy" width="800" height="910" />
+              <img src="assets/pkg/beginner-2.jpg" alt="Beginner student paddling with the coach" loading="lazy" width="1400" height="788" />
+              <img src="assets/pkg/beginner-3.jpg" alt="Kid learning to pop up on the beach" loading="lazy" width="1080" height="1350" style="object-position: 50% 20%" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="pkg1_title">Beginner Surf Lesson</h3>
             <p class="pkg__desc" data-i18n="pkg1_desc">Your first steps into surfing: warm-up, paddling, the take-off and riding your first waves, in a relaxed and supportive setting.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_2h_group">/ person, 2h group</span></p>
+            <table class="pkg__ptable">
+              <thead><tr><th scope="col"><span class="sr-only">Option</span></th><th scope="col" data-i18n="price_private">Private</th><th scope="col" data-i18n="price_group">Group / person</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" data-i18n="price_2h">2h lesson</th><td>&euro;40</td><td>&euro;35</td></tr>
+                <tr><th scope="row" data-i18n="price_full_day">Full day</th><td>&euro;45</td><td>&euro;40</td></tr>
+              </tbody>
+            </table>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_2h_lesson">2h lesson: 40&euro; private / 35&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_full_day">Full day: 45&euro; private / 40&euro; group</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_full_day_breakdown">Full day = 2h lesson + beach lunch + 2h free surf</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_board_wetsuit">Board &amp; wetsuit included</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
             <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
+            <a href="beginner.html" class="pkg__more" data-i18n="btn_learn_more">Learn more</a>
           </div>
         </article>
 
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/course-2.jpg" alt="Surfer riding a green wave" loading="lazy" width="900" height="600" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/pkg/green-wave-1.jpg" alt="Surf group celebrating on their boards" loading="lazy" width="1400" height="788" />
+              <img src="assets/pkg/green-wave-2.jpg" alt="Surfer riding a green wave" loading="lazy" width="1400" height="934" />
+              <img src="assets/pkg/green-wave-3.jpg" alt="Student surfing an unbroken wave" loading="lazy" width="1400" height="934" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="pkg2_title">Green Wave Surf Lesson</h3>
             <p class="pkg__desc" data-i18n="pkg2_desc">Ready to leave the whitewater? Work on wave selection, timing, positioning and proper take-offs on clean unbroken waves.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_2h_group">/ person, 2h group</span></p>
+            <table class="pkg__ptable">
+              <thead><tr><th scope="col"><span class="sr-only">Option</span></th><th scope="col" data-i18n="price_private">Private</th><th scope="col" data-i18n="price_group">Group / person</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" data-i18n="price_2h">2h lesson</th><td>&euro;40</td><td>&euro;35</td></tr>
+                <tr><th scope="row" data-i18n="price_full_day">Full day</th><td>&euro;45</td><td>&euro;40</td></tr>
+              </tbody>
+            </table>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_2h_lesson">2h lesson: 40&euro; private / 35&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_full_day">Full day: 45&euro; private / 40&euro; group</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_full_day_breakdown">Full day = 2h lesson + beach lunch + 2h free surf</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_board_wetsuit">Board &amp; wetsuit included</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
             <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
+            <a href="green-wave.html" class="pkg__more" data-i18n="btn_learn_more">Learn more</a>
           </div>
         </article>
 
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/course-3.jpg" alt="Intermediate surfer with a board" loading="lazy" width="900" height="600" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/course-3.jpg" alt="Intermediate surfer on a green wave" loading="lazy" width="2736" height="1824" />
+              <img src="assets/pkg/intermediate-2.jpg" alt="Surfers walking into the water with their boards" loading="lazy" width="1400" height="936" />
+              <img src="assets/pkg/intermediate-3.jpg" alt="Surfer hitting the lip of a wave" loading="lazy" width="1400" height="788" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="pkg3_title">Intermediate Lesson</h3>
             <p class="pkg__desc" data-i18n="pkg3_desc">Already catching green waves? Refine your turns, speed generation and linking manoeuvres.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_2h_group">/ person, 2h group</span></p>
+            <table class="pkg__ptable">
+              <thead><tr><th scope="col"><span class="sr-only">Option</span></th><th scope="col" data-i18n="price_private">Private</th><th scope="col" data-i18n="price_group">Group / person</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" data-i18n="price_2h">2h lesson</th><td>&euro;40</td><td>&euro;35</td></tr>
+                <tr><th scope="row" data-i18n="price_full_day">Full day</th><td>&euro;45</td><td>&euro;40</td></tr>
+              </tbody>
+            </table>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_2h_lesson">2h lesson: 40&euro; private / 35&euro; group</span></li>
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="3.6"/><path d="M10 2v1.8M10 16.2V18M2 10h1.8M16.2 10H18M4.3 4.3l1.3 1.3M14.4 14.4l1.3 1.3M15.7 4.3l-1.3 1.3M5.6 14.4l-1.3 1.3"/></svg><span data-i18n="feat_full_day">Full day: 45&euro; private / 40&euro; group</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_full_day_breakdown">Full day = 2h lesson + beach lunch + 2h free surf</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_board_wetsuit">Board &amp; wetsuit included</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
             <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
+            <a href="intermediate.html" class="pkg__more" data-i18n="btn_learn_more">Learn more</a>
           </div>
         </article>
 
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/course-4.jpg" alt="Surfers walking to the water" loading="lazy" width="800" height="534" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/pkg/guiding-1.jpg" alt="Coach pointing out the surf spot" loading="lazy" width="1050" height="1400" />
+              <img src="assets/pkg/guiding-2.jpg" alt="Surfer walking to the lineup" loading="lazy" width="1400" height="934" />
+              <img src="assets/pkg/guiding-3.jpg" alt="Loading surfboards on the car roof" loading="lazy" width="1050" height="1400" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="pkg4_title">Surf Guiding</h3>
             <p class="pkg__desc" data-i18n="pkg4_desc">Daily guiding to the best spot based on swell, wind, tides and your level. Uncrowded lineups.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
             <p class="pkg__price"><span class="pkg__amount">&euro;35</span><span class="pkg__unit" data-i18n="unit_person_per_day">/ person, per day</span></p>
             <ul class="pkg__feats">
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.5s5.5-4.6 5.5-9a5.5 5.5 0 0 0-11 0c0 4.4 5.5 9 5.5 9Z"/><circle cx="10" cy="8.4" r="2.1"/></svg><span data-i18n="feat_best_spot">Best spot of the day, chosen daily</span></li>
@@ -314,6 +353,7 @@
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13.5V7.2a1 1 0 0 1 1-1h8.5v7.3"/><path d="M11.5 8.4h3.1l2.9 3v2.1"/><path d="M2 13.5h1.4M8.6 13.5h2.6M15.4 13.5h2.1"/><circle cx="5.6" cy="14.2" r="1.9"/><circle cx="13.6" cy="14.2" r="1.9"/></svg><span data-i18n="feat_transport">Transport included</span></li>
             </ul>
             <a href="https://wa.me/212653021167" class="pkg__cta" target="_blank" rel="noopener" data-i18n="btn_book_now">Book Now</a>
+            <a href="guiding.html" class="pkg__more" data-i18n="btn_learn_more">Learn more</a>
           </div>
         </article>
         </div>
@@ -337,8 +377,7 @@
 
       <div class="about__main">
         <div class="about__media">
-          <video src="assets/about-video.mp4" poster="assets/about-video-poster.jpg"
-                 autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+          <img src="assets/about-youness.jpg" alt="Youness surfing a wave near Taghazout" loading="lazy" width="882" height="1403" style="object-position: 50% 45%" />
         </div>
 
         <div class="about__content">
@@ -390,31 +429,37 @@
 
       <div class="process__grid">
         <article class="pcard">
+          <div class="pcard__media"><img src="assets/gallery/roll-11.jpg" alt="Loading surfboards on the car before the session" loading="lazy" width="720" height="1280" style="object-position: 50% 35%" /></div>
           <div class="pcard__top"><img class="pcard__icon" src="assets/p1.svg" alt="" /><span class="pcard__num">01</span></div>
           <h3 class="pcard__title" data-i18n="p1_title">Book</h3>
           <p class="pcard__text" data-i18n="p1_text">Send me a message on WhatsApp and tell me your dates and level, and I'll help you pick the session that fits you best.</p>
         </article>
         <article class="pcard">
+          <div class="pcard__media"><img src="assets/gallery/roll-05.jpg" alt="Group warm-up on the beach" loading="lazy" width="1280" height="854" /></div>
           <div class="pcard__top"><img class="pcard__icon" src="assets/p2.svg" alt="" /><span class="pcard__num">02</span></div>
           <h3 class="pcard__title" data-i18n="p2_title">Meet &amp; Warm Up</h3>
           <p class="pcard__text" data-i18n="p2_text">We meet on the sand, loosen up together and go through a quick safety briefing so you feel ready before we paddle out.</p>
         </article>
         <article class="pcard">
+          <div class="pcard__media"><img src="assets/gallery/roll-02.jpg" alt="Coach Youness with a student in the water" loading="lazy" width="960" height="1280" style="object-position: 50% 40%" /></div>
           <div class="pcard__top"><img class="pcard__icon" src="assets/p3.svg" alt="" /><span class="pcard__num">03</span></div>
           <h3 class="pcard__title" data-i18n="p3_title">Lesson</h3>
           <p class="pcard__text" data-i18n="p3_text">Two hours in the water with me, one-on-one or in a small group, with feedback tailored to exactly where you are.</p>
         </article>
         <article class="pcard">
+          <div class="pcard__media"><img src="assets/gallery/roll-03.jpg" alt="Tajine lunch on the beach" loading="lazy" width="720" height="1280" style="object-position: 50% 80%" /></div>
           <div class="pcard__top"><img class="pcard__icon" src="assets/p4.svg" alt="" /><span class="pcard__num">04</span></div>
           <h3 class="pcard__title" data-i18n="p4_title">Lunch at the Beach</h3>
           <p class="pcard__text" data-i18n="p4_text">On full-day packages we share a fresh lunch on the beach. Time to rest, refuel and swap stories before the next surf.</p>
         </article>
         <article class="pcard">
+          <div class="pcard__media"><img src="assets/pkg/green-wave-2.jpg" alt="Student riding a wave during free surf" loading="lazy" width="1400" height="934" /></div>
           <div class="pcard__top"><img class="pcard__icon" src="assets/p5.svg" alt="" /><span class="pcard__num">05</span></div>
           <h3 class="pcard__title" data-i18n="p5_title">Free Surf</h3>
           <p class="pcard__text" data-i18n="p5_text">Two more hours to put it all into practice and just enjoy the waves, with me close by whenever you need a hand.</p>
         </article>
         <article class="pcard">
+          <div class="pcard__media"><img src="assets/gallery/roll-01.jpg" alt="Students celebrating on their boards" loading="lazy" width="720" height="1280" style="object-position: 50% 62%" /></div>
           <div class="pcard__top"><img class="pcard__icon" src="assets/p6.svg" alt="" /><span class="pcard__num">06</span></div>
           <h3 class="pcard__title" data-i18n="p6_title">Progress</h3>
           <p class="pcard__text" data-i18n="p6_text">We look back on how your session went and map out your next step, from whitewater to green waves to point breaks.</p>
@@ -445,14 +490,23 @@
         </div>
         <div class="pkg__track" id="actTrack" data-pkg-track tabindex="0" role="group" aria-label="Activities">
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/act-1.jpg" alt="Surfskate session" loading="lazy" width="800" height="450" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/pkg/surfskate-1.jpg" alt="Taghazout skatepark" loading="lazy" width="1400" height="788" />
+              <img src="assets/pkg/surfskate-2.jpg" alt="Surfskate session in the bowl" loading="lazy" width="1400" height="788" />
+              <img src="assets/pkg/surfskate-3.jpg" alt="Sunset over the skatepark" loading="lazy" width="1050" height="1400" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="act1_title">Surfskate</h3>
             <p class="pkg__desc" data-i18n="act1_desc">Improve your balance, flow and turning technique on land. Perfect training to boost your surf skills before you paddle out.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
-            <p class="pkg__price"><span class="pkg__amount">&euro;20</span><span class="pkg__unit" data-i18n="unit_person_group">/ person, group</span></p>
+            <table class="pkg__ptable">
+              <thead><tr><th scope="col"><span class="sr-only">Option</span></th><th scope="col" data-i18n="price_private">Private</th><th scope="col" data-i18n="price_group">Group / person</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" data-i18n="price_2h_session">2h session</th><td>&euro;25</td><td>&euro;20</td></tr>
+              </tbody>
+            </table>
             <ul class="pkg__feats">
-            <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_act1_price">Private 25&euro; / Group 20&euro; per person</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16c0-6.6 5.4-12 12-12 0 6.6-5.4 12-12 12Z"/><path d="M8.5 11.5 12 15"/></svg><span data-i18n="feat_surfskate_provided">Surfskate provided</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2"/><path d="M10 5.8V10l2.8 1.8"/></svg><span data-i18n="feat_balance_flow">Balance, flow &amp; turning technique</span></li>
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m6.6 10.2 2.3 2.3 4.5-4.7"/></svg><span data-i18n="feat_great_training">Great training for the water</span></li>
@@ -462,11 +516,16 @@
         </article>
 
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/act-2.jpg" alt="Timlaline sand dunes excursion" loading="lazy" width="900" height="720" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/pkg/sand-dunes-1.jpg" alt="Campfire at sunset on the dunes trip" loading="lazy" width="1050" height="1400" />
+              <img src="assets/pkg/sand-dunes-2.jpg" alt="Camel at the Timlaline dunes" loading="lazy" width="787" height="1400" />
+              <img src="assets/pkg/sand-dunes-3.jpg" alt="Sandstone rock formations" loading="lazy" width="787" height="1400" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="act2_title">Sand Dunes</h3>
             <p class="pkg__desc" data-i18n="act2_desc">Guided trip to the Timlaline Sand Dunes: sandboarding, desert views and traditional Moroccan tea.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
             <p class="pkg__price"><span class="pkg__amount">&euro;20</span><span class="pkg__unit" data-i18n="unit_person">/ person</span></p>
             <ul class="pkg__feats">
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_min_3">Minimum 3 people</span></li>
@@ -479,11 +538,15 @@
         </article>
 
         <article class="pkg">
-          <div class="pkg__media"><img src="assets/act-3.jpg" alt="Paradise Valley in the Atlas mountains" loading="lazy" width="800" height="450" /></div>
+          <div class="pkg__media slides" data-slides>
+            <div class="slides__strip">
+              <img src="assets/pkg/paradise-valley-1.jpg" alt="Canyon walls in Paradise Valley" loading="lazy" width="787" height="1400" />
+              <img src="assets/pkg/paradise-valley-2.jpg" alt="Fruit stall on the way to Paradise Valley" loading="lazy" width="787" height="1400" />
+            </div>
+          </div>
           <div class="pkg__body">
             <h3 class="pkg__title" data-i18n="act3_title">Paradise Valley</h3>
             <p class="pkg__desc" data-i18n="act3_desc">A guided excursion to a hidden mountain oasis in the Atlas: natural pools, palm groves and mountain scenery.</p>
-            <p class="pkg__from" data-i18n="lbl_from">Starting from</p>
             <p class="pkg__price"><span class="pkg__amount">&euro;15</span><span class="pkg__unit" data-i18n="unit_person">/ person</span></p>
             <ul class="pkg__feats">
             <li class="pkg__feat"><svg class="pkg__ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7.5" r="2.8"/><path d="M2.5 16.5a5.5 5.5 0 0 1 11 0"/><path d="M14 5.2a2.8 2.8 0 0 1 0 5.4M15.5 16.5a5.4 5.4 0 0 0-2-4.2"/></svg><span data-i18n="feat_min_3">Minimum 3 people</span></li>
@@ -501,46 +564,62 @@
 
   <!-- ====================== GALLERY ====================== -->
   <section class="gallery section--alt" id="gallery">
-    <div class="gallery__inner">
-      <div class="section-head">
+    <div class="roll">
+      <div class="section-head roll__head">
         <span class="eyebrow"><img src="assets/ic-photos.svg" alt="" /><span data-i18n="gallery_eyebrow">Gallery</span></span>
-        <h2 class="section-title" data-i18n="gallery_title">Moments on the Water</h2>
+        <h2 class="section-title" data-i18n="gallery_title">What your camera roll will look like after your surf trip to Morocco</h2>
         <p class="section-sub" data-i18n="gallery_sub">Snapshots from students learning to surf, conquering waves, and celebrating the Moroccan coast.</p>
       </div>
 
-      <div class="gallery__grid" data-gallery>
-        <a class="gallery__item" href="assets/gal-1.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-1.jpeg" alt="Surfer catching a wave" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-2.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-2.jpeg" alt="Student on surfboard" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-3.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-3.jpeg" alt="Surfing lesson in action" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-4.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-4.jpeg" alt="Beach coaching session" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-5.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-5.jpeg" alt="Wave at Taghazout" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-6.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-6.jpeg" alt="Group surf lesson" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-7.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-7.jpeg" alt="Surfer in the water" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
-        <a class="gallery__item" href="assets/gal-8.jpeg" data-lightbox="gallery">
-          <img src="assets/gal-8.jpeg" alt="Sunrise surf session" loading="lazy" />
-          <div class="gallery__overlay"></div>
-        </a>
+      <div class="roll__grid" aria-label="Camera roll">
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 1"><img src="assets/gallery/thumb-01.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 2"><img src="assets/gallery/thumb-02.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 3"><img src="assets/gallery/thumb-03.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 4"><img src="assets/gallery/thumb-04.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 5"><img src="assets/gallery/thumb-05.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 6"><img src="assets/gallery/thumb-06.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 7"><img src="assets/gallery/thumb-07.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 8"><img src="assets/gallery/thumb-08.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 9"><img src="assets/gallery/thumb-09.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 10"><img src="assets/gallery/thumb-10.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 11"><img src="assets/gallery/thumb-11.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 12"><img src="assets/gallery/thumb-12.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 13"><img src="assets/gallery/thumb-13.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+        <button type="button" class="roll__thumb" data-roll-thumb aria-label="Photo 14"><img src="assets/gallery/thumb-14.jpg" alt="" width="240" height="240" loading="lazy" /></button>
+      </div>
+
+      <div class="roll__phone" data-roll>
+        <div class="roll__screen">
+          <div class="roll__strip" tabindex="0" aria-roledescription="slideshow" aria-label="Surf trip photos">
+            <img src="assets/gallery/roll-01.jpg" alt="Students celebrating on their boards in the water" width="720" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-02.jpg" alt="Coach and student on the sand before paddling out" width="960" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-03.jpg" alt="Tajine lunch on the beach after the session" width="720" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-04.jpg" alt="Two surfers walking into the water with their boards" width="960" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-05.jpg" alt="Group warm-up on the beach" width="1280" height="854" loading="lazy" />
+            <img src="assets/gallery/roll-06.jpg" alt="Pop-up practice on the sand" width="960" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-07.jpg" alt="High five in the lineup" width="720" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-08.jpg" alt="Students running into the ocean" width="1280" height="854" loading="lazy" />
+            <img src="assets/gallery/roll-09.jpg" alt="Stretching next to the boards" width="1280" height="854" loading="lazy" />
+            <img src="assets/gallery/roll-10.jpg" alt="Coach showing the pop-up stance" width="1280" height="854" loading="lazy" />
+            <img src="assets/gallery/roll-11.jpg" alt="Loading surfboards on the car roof" width="720" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-12.jpg" alt="Theory session on the beach" width="720" height="1280" loading="lazy" />
+            <img src="assets/gallery/roll-13.jpg" alt="Parasol and board on the sand" width="1280" height="854" loading="lazy" />
+            <img src="assets/gallery/roll-14.jpg" alt="Surfboards next to a flowering bush" width="720" height="1280" loading="lazy" />
+          </div>
+          <div class="roll__top" aria-hidden="true">
+            <span class="roll__place">Taghazout, Morocco</span>
+            <span class="roll__count">1 / 14</span>
+          </div>
+          <div class="roll__bar" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="roll__controls">
+          <button type="button" class="pkg__arrow" data-roll-prev aria-label="Previous photo"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg></button>
+          <button type="button" class="pkg__arrow roll__play" data-roll-play aria-label="Pause slideshow">
+            <svg class="roll__ico-pause" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><rect x="5.5" y="4.5" width="3" height="11" rx="1"/><rect x="11.5" y="4.5" width="3" height="11" rx="1"/></svg>
+            <svg class="roll__ico-play" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M7 4.8v10.4a.8.8 0 0 0 1.2.7l8.2-5.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8Z"/></svg>
+          </button>
+          <button type="button" class="pkg__arrow" data-roll-next aria-label="Next photo"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 4.5 13 10l-5.5 5.5"/></svg></button>
+        </div>
       </div>
     </div>
   </section>
@@ -665,18 +744,6 @@
     </div>
   </section>
 
-  <!-- ====================== LIGHTBOX MODAL ====================== -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
-    <div class="lightbox__nav">
-      <button class="lightbox__btn" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
-      <button class="lightbox__btn" id="lightboxNext" aria-label="Next image">&#8250;</button>
-    </div>
-    <div class="lightbox__content">
-      <img class="lightbox__img" id="lightboxImg" src="" alt="" />
-    </div>
-  </div>
-
   </main>
 
   <!-- ====================== FOOTER ====================== -->
@@ -695,6 +762,7 @@
         <a href="#testimonials" class="footer__link" data-i18n="nav_reviews">Reviews</a>
         <a href="#faq" class="footer__link" data-i18n="footer_faq">FAQ</a>
         <a href="https://wa.me/212653021167" class="footer__link" target="_blank" rel="noopener" data-i18n="footer_contact">Contact</a>
+        <a href="https://www.instagram.com/tamasurf.morocco/" class="footer__link" target="_blank" rel="noopener">Instagram</a>
       </nav>
       <p class="footer__credit">
         <span data-i18n="footer_credit">Website developed by</span>
