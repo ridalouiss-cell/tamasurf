@@ -774,6 +774,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   }
 }
 .pkg__nav { display: flex; justify-content: flex-end; gap: 10px; }
+.tst__nav { display: none; }   /* desktop shows a plain grid, nothing to page through */
 .pkg__arrow {
   width: 44px;
   height: 44px;
@@ -1877,7 +1878,6 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
 @media (max-width: 600px) {
   .process__grid { grid-template-columns: 1fr; }
   .spots__strip  { grid-template-columns: 1fr 1fr; }
-  .tst__grid     { grid-template-columns: 1fr; }
   .pkg__track > .pkg { flex-basis: 100%; }
 }
 @media (max-width: 760px) {
@@ -1925,6 +1925,35 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   .pkg__feat { font-size: 13.8px; }
   .pkg__nav { justify-content: center; }
 
+  .tst__carousel { display: flex; flex-direction: column; gap: 16px; }
+  .tst__nav { display: flex; justify-content: center; }
+  /* reviews become a swipeable row on phones: six stacked cards ate the screen */
+  .tst__grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    /* bleed to the screen edges so the peeking card isn't clipped by the padding */
+    margin: 0 calc(var(--pad-x) * -1);
+    padding: 4px var(--pad-x);
+  }
+  .tst__grid::-webkit-scrollbar { display: none; }
+  .tst__grid > .tcard {
+    flex: 0 0 86%;          /* a sliver of the next card signals swiping */
+    scroll-snap-align: start;
+  }
+  /* long reviews would otherwise set a huge height for every card */
+  .tcard__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
   /* cards + panels */
   .spots { padding: 44px var(--pad-x); }
   .spots__title { font-size: 21px; }
@@ -1944,8 +1973,12 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   .nav__logo { height: 40px; }
   .lang-btn { padding: 4px 8px; gap: 4px; }
   .lang-chevron { display: none; }
-  .hero { height: 92vh; min-height: 620px; }
+  .hero { height: 70vh; min-height: 480px; }
   .hero__content { padding-top: 84px; padding-bottom: 20px; }
+  /* phones: drop the auto margins so the badge sits under the buttons
+     instead of being pushed to the bottom edge with a gap in between */
+  .hero__title { margin-top: 0; }
+  .hero__badge { margin-top: 18px; }
   .hero__body { margin-top: 16px; }
   .footer__links { justify-content: center; gap: 16px 24px; }
   .footer { padding: 44px var(--pad-x) 36px; }

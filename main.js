@@ -633,7 +633,7 @@ let restoreSavedLang = () => {};
 
 /* ---------- PACKAGES / ACTIVITIES: carousels ---------- */
 (function carousels() {
-  document.querySelectorAll(".pkg__carousel").forEach((root) => {
+  document.querySelectorAll(".pkg__carousel, .tst__carousel").forEach((root) => {
     const track = root.querySelector("[data-pkg-track]");
     const prev = root.querySelector("[data-pkg-prev]");
     const next = root.querySelector("[data-pkg-next]");
@@ -641,7 +641,7 @@ let restoreSavedLang = () => {};
 
     // one card + the flex gap, so a click advances exactly one card
     const step = () => {
-      const card = track.querySelector(".pkg");
+      const card = track.querySelector(".pkg, .tcard");
       if (!card) return track.clientWidth;
       const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
       return card.getBoundingClientRect().width + gap;
@@ -649,7 +649,10 @@ let restoreSavedLang = () => {};
 
     const sync = () => {
       const max = track.scrollWidth - track.clientWidth;
-      prev.disabled = track.scrollLeft <= 1;
+      // the reviews track bleeds past the section padding, so its resting
+      // position is padding-left rather than 0
+      const start = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+      prev.disabled = track.scrollLeft <= start + 1;
       next.disabled = track.scrollLeft >= max - 1;
     };
 
@@ -879,4 +882,38 @@ restoreSavedLang();
   video.addEventListener("canplay", update);   // the first play() can land before it is ready
   phone.addEventListener("change", update);
   still.addEventListener("change", update);
+})();
+
+/* ---------- ABOUT: keep the video playing on phones ---------- */
+(function aboutVideo() {
+  const video = document.querySelector("[data-about-video]");
+  if (!video) return;
+
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let onScreen = false;
+
+  const update = () => {
+    if (still.matches) { video.pause(); return; }
+    if (onScreen) video.play().catch(() => {});   // phones often refuse the first attempt
+    else video.pause();
+  };
+
+  new IntersectionObserver((entries) => {
+    onScreen = entries[0].isIntersecting;
+    update();
+  }, { rootMargin: "200px" }).observe(video);
+
+  video.addEventListener("canplay", update);
+  still.addEventListener("change", update);
+
+  // iOS in Low Power Mode blocks autoplay outright: start on the first tap instead
+  const onGesture = () => {
+    update();
+    if (!video.paused) {
+      ["touchstart", "pointerdown", "scroll"].forEach((e) =>
+        window.removeEventListener(e, onGesture));
+    }
+  };
+  ["touchstart", "pointerdown", "scroll"].forEach((e) =>
+    window.addEventListener(e, onGesture, { passive: true }));
 })();

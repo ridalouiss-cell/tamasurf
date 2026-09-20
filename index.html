@@ -381,7 +381,7 @@
 
       <div class="about__main">
         <div class="about__media">
-          <video src="assets/about-video.mp4" poster="assets/about-youness.jpg"
+          <video data-about-video src="assets/about-video.mp4" poster="assets/about-video-poster.jpg"
                  autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
         </div>
 
@@ -701,7 +701,13 @@
         <p class="section-sub" data-i18n="tst_sub">Real stories from surfers who paddled out with Youness and fell in love with Morocco's waves.</p>
       </div>
 
-      <div class="tst__grid" data-tst-grid></div>
+      <div class="tst__carousel">
+        <div class="tst__grid" data-tst-grid data-pkg-track tabindex="0" role="group" aria-label="Avis clients"></div>
+        <div class="pkg__nav tst__nav">
+          <button class="pkg__arrow" type="button" data-pkg-prev aria-label="Avis précédent"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg></button>
+          <button class="pkg__arrow" type="button" data-pkg-next aria-label="Avis suivant"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 4.5 13 10l-5.5 5.5"/></svg></button>
+        </div>
+      </div>
     </div>
   </section>
 
