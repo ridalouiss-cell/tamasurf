@@ -361,7 +361,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
 .hero__img {
   width: 100%; height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 50%;
   transform: scale(1.02);
   will-change: transform;
   animation: kenburns 16s ease-in-out infinite alternate;
@@ -408,7 +408,9 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  margin-top: 20px;
+  /* auto margin pushes it to the bottom of the photo, under the CTAs,
+     while still keeping it in flow so it never overlaps them */
+  margin-top: auto;
   padding: 10px 22px 13px;
   border-radius: 16px;
   /* a translucent chip, not just bare text — keeps it legible over any
@@ -427,7 +429,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   gap: 0.04em;
   width: 100%;
   position: relative;
-  margin-top: 0;
+  margin-top: auto;   /* pairs with .hero__badge's auto margin: wordmark+CTAs stay centred above the badge */
 }
 .hero__word {
   font-family: var(--font-brand);
@@ -555,25 +557,6 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   flex-direction: column;
   gap: var(--section-gap);
   position: relative;
-}
-.about__title {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  letter-spacing: -1.6px;
-  line-height: 1.1;
-  gap: 2px;
-}
-.about__title-top {
-  font-weight: 600;
-  font-size: clamp(28px, 3vw, 40px);
-  color: var(--text-body);
-}
-.about__title-bottom {
-  font-weight: 700;
-  font-size: clamp(34px, 4.4vw, 58px);
-  color: var(--text-dark);
 }
 .about__scribble {
   position: absolute;
@@ -1563,19 +1546,19 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "head phone" "grid phone";
-  grid-template-rows: 1fr 1fr;   /* head sits above the middle, grid below: the pair centres on the phone */
+  grid-template-rows: auto auto;
+  align-content: center;   /* head + grid centre as one block against the phone */
   column-gap: 72px;
   row-gap: 32px;
 }
-.roll__head { grid-area: head; align-self: end; align-items: flex-start; text-align: left; margin: 0; }
+.roll__head { grid-area: head; align-items: flex-start; text-align: left; margin: 0; }
 .roll__head .section-title { font-size: clamp(32px, 3.6vw, 48px); }
 
 /* camera-roll grid: tight square thumbnails, like the Photos app */
 .roll__grid {
   grid-area: grid;
-  align-self: start;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);   /* 18 photos fill three even rows */
   gap: 3px;
   border-radius: var(--r-md);
   overflow: hidden;
@@ -1623,7 +1606,7 @@ body.menu-open .mobile-menu { opacity: 1; transform: translateY(0) scale(1); poi
 .roll__strip img {
   flex: 0 0 100%;
   width: 100%; height: 100%;
-  object-fit: contain;
+  object-fit: cover;   /* photos fill the phone frame edge to edge */
   scroll-snap-align: start;
 }
 .roll__top {
