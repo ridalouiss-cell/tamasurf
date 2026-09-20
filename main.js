@@ -850,3 +850,33 @@ let restoreSavedLang = () => {};
 /* ---------- i18n: restore a saved language now that all page content
    (including the JS-rendered testimonials) exists ---------- */
 restoreSavedLang();
+
+/* ---------- CLOSING CTA: video background on phones only ---------- */
+(function ctaVideo() {
+  const video = document.querySelector("[data-cta-video]");
+  if (!video) return;
+
+  const phone = window.matchMedia("(max-width: 760px)");
+  const still = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const wanted = () => phone.matches && !still.matches;
+
+  let onScreen = false;
+  const update = () => {
+    if (!wanted()) { video.pause(); return; }
+    if (!video.src) {                                // desktop fetches neither file
+      video.poster = video.dataset.poster;
+      video.src = video.dataset.src;
+    }
+    if (onScreen) video.play().catch(() => {});      // poster stays if autoplay is blocked
+    else video.pause();                              // no decoding while it's off screen
+  };
+
+  new IntersectionObserver((entries) => {
+    onScreen = entries[0].isIntersecting;
+    update();
+  }, { rootMargin: "200px" }).observe(video);
+
+  video.addEventListener("canplay", update);   // the first play() can land before it is ready
+  phone.addEventListener("change", update);
+  still.addEventListener("change", update);
+})();
