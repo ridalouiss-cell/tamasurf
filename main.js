@@ -11,7 +11,7 @@ const I18N = {
     hero_sub: "Top-Rated Surf Coach in Tamraght, Taghazout & Aourir",
     hero_tagline_1: "Whether you're a beginner or chasing barrels,",
     hero_tagline_2: "we've got the perfect wave for you.",
-    hero_sr: ": Surf Lessons & Coaching in Taghazout, Morocco",
+    hero_sr: ": Surf Lessons & Coaching in Tamraght, Morocco",
 
     courses_eyebrow: "Courses", courses_title: "Find Your Wave",
     courses_sub: "From your first wave to uncrowded lineups, I've got the right session for you.",
@@ -146,7 +146,7 @@ const I18N = {
     hero_sub: "Coach de surf le mieux noté à Tamraght, Taghazout & Aourir",
     hero_tagline_1: "Débutant ou en quête de tubes,",
     hero_tagline_2: "on a la vague parfaite pour vous.",
-    hero_sr: " : Cours et coaching de surf à Taghazout, Maroc",
+    hero_sr: " : Cours et coaching de surf à Tamraght, Maroc",
 
     courses_eyebrow: "Cours", courses_title: "Trouvez votre vague",
     courses_sub: "De votre première vague aux spots sans foule, j'ai la session qu'il vous faut.",
@@ -281,7 +281,7 @@ const I18N = {
     hero_sub: "Instructor de surf mejor calificado en Tamraght, Taghazout & Aourir",
     hero_tagline_1: "Ya seas principiante o busques tubos,",
     hero_tagline_2: "tenemos la ola perfecta para ti.",
-    hero_sr: ": Clases y coaching de surf en Taghazout, Marruecos",
+    hero_sr: ": Clases y coaching de surf en Tamraght, Marruecos",
 
     courses_eyebrow: "Cursos", courses_title: "Encuentra tu ola",
     courses_sub: "Desde tu primera ola hasta los picos menos concurridos, tengo la sesión perfecta para ti.",
@@ -416,7 +416,7 @@ const I18N = {
     hero_sub: "Bestbewerteter Surfcoach in Tamraght, Taghazout & Aourir",
     hero_tagline_1: "Ob Anfänger oder auf der Jagd nach Barrels,",
     hero_tagline_2: "wir haben die perfekte Welle für dich.",
-    hero_sr: ": Surfkurse und Coaching in Taghazout, Marokko",
+    hero_sr: ": Surfkurse und Coaching in Tamraght, Marokko",
 
     courses_eyebrow: "Kurse", courses_title: "Finde deine Welle",
     courses_sub: "Von deiner ersten Welle bis zu leeren Line-ups: Ich habe die passende Session für dich.",
